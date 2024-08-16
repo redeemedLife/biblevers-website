@@ -1,37 +1,42 @@
+/* Allgemeine Stile für die gesamte Seite */
 body {
-    font-family: 'Anton SC', sans-serif;  /* Verwende die Google Font */
-    background-color: #f4f4f4;
-    color: #333;
-    text-align: center;
-    padding: 50px;
+    font-family: 'Manrope', sans-serif; /* Default-Schriftart für den Body-Text */
+    background-color: #f4f4f4; /* Hintergrundfarbe */
+    color: #333; /* Textfarbe */
+    text-align: center; /* Zentriert den Text */
+    padding: 50px; /* Abstand vom Rand */
+    margin: 0; /* Kein Margin */
 }
 
+/* Container für zentrierten Inhalt */
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Maximale Breite des Containers */
+    margin: 0 auto; /* Zentriert den Container horizontal */
+    background: #fff; /* Hintergrundfarbe des Containers */
+    padding: 20px; /* Innenabstand */
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schatteneffekt */
 }
 
+/* Stile für die Überschrift */
 h1 {
-    font-family: 'Anton SC', sans-serif; /* Verwende die Google Font */
-    font-size: 2.5em;  /* Größere Schriftgröße für die Überschrift */
-    color: #191970;    /* Farbe für die Überschrift (dunkles Marineblau) */
-    margin-bottom: 20px;
+    font-family: 'Anton SC', sans-serif; /* Schriftart für die Überschrift */
+    font-size: 2.5em; /* Größe der Überschrift */
+    color: #191970; /* Farbe für die Überschrift (dunkles Marineblau) */
+    margin-bottom: 20px; /* Abstand nach unten */
 }
 
+/* Stile für den Text unter der Überschrift */
 p {
-    font-family: 'Anton SC', sans-serif; /* Verwende die Google Font */
-    font-size: 1.2em;  /* Schriftgröße für den Bibelvers */
-    color: #333;       /* Textfarbe für den Bibelvers */
-    margin-top: 20px;
+    font-family: 'Manrope', sans-serif; /* Schriftart für den Text */
+    font-size: 1.2em; /* Schriftgröße für den Text */
+    color: #333; /* Textfarbe */
+    margin-top: 20px; /* Abstand nach oben */
 }
 
-/* Beispiel für die Klasse .anton-sc-regular */
-.antonsc-regular {
-    font-family: 'Anton SC', sans-serif;
-    font-weight: 400; /* Normalgewicht */
-    font-style: normal; /* Normale Schriftart-Stil */
+/* Weitere spezifische Stile für Manrope */
+.manrope {
+    font-family: 'Manrope', sans-serif; /* Schriftart für spezifische Texte */
+    font-weight: 400; /* Gewicht der Schriftart */
+    font-style: normal; /* Stil der Schriftart */
 }
