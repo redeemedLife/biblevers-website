@@ -1,15 +1,21 @@
-const bibleVerses = [
-    "Denn ich weiß, was für Gedanken ich über euch habe, spricht der Herr: Gedanken des Friedens und nicht des Leides, dass ich euch gebe Zukunft und Hoffnung. - Jeremia 29:11",
-    "Der Herr ist mein Hirte, mir wird nichts mangeln. - Psalm 23:1",
-    "Alle Dinge sind möglich dem, der da glaubt. - Markus 9:23",
-    "Ich vermag alles durch den, der mich mächtig macht, Christus. - Philipper 4:13",
-    "Denn Gott hat uns nicht gegeben den Geist der Furcht, sondern der Kraft und der Liebe und der Besonnenheit. - 2. Timotheus 1:7"
+// Array von Bibelversen
+const verses = [
+    "Psalm 23,1: Der Herr ist mein Hirte; mir wird nichts mangeln.",
+    "Johannes 3,16: Denn also hat Gott die Welt geliebt, dass er seinen eingeborenen Sohn gab, damit alle, die an ihn glauben, nicht verloren werden, sondern das ewige Leben haben.",
+    "Philipper 4,13: Ich vermag alles durch den, der mich kräftigt.",
+    "Jeremia 29,11: Denn ich weiß wohl, welche Gedanken ich über euch denke, spricht der Herr, Gedanken des Friedens und nicht des Unheils, um euch eine Zukunft und eine Hoffnung zu geben.",
+    "Matthäus 5,14: Ihr seid das Licht der Welt. Eine Stadt, die auf einem Berge liegt, kann nicht verborgen bleiben."
 ];
 
-function generateVerse() {
-    const randomIndex = Math.floor(Math.random() * bibleVerses.length);
-    document.getElementById("bible-verse").innerText = bibleVerses[randomIndex];
+// Funktion, um einen zufälligen Vers anzuzeigen
+function displayRandomVerse() {
+    // Wähle einen zufälligen Index
+    const randomIndex = Math.floor(Math.random() * verses.length);
+    // Hole den Paragraphen mit der ID 'verse'
+    const verseElement = document.getElementById('verse');
+    // Setze den Text des Paragraphen auf den zufälligen Vers
+    verseElement.textContent = verses[randomIndex];
 }
 
-// Generiere einen Vers beim Laden der Seite
-generateVerse();
+// Führe die Funktion aus, wenn die Seite geladen wird
+window.onload = displayRandomVerse;
