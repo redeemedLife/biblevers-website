@@ -8,21 +8,18 @@ body {
     margin: 0; /* Kein Margin */
 }
 
-/* Container für zentrierten Inhalt */
+/* Entferne die Stile für den Container-Kasten */
 .container {
     max-width: 600px; /* Maximale Breite des Containers */
     margin: 0 auto; /* Zentriert den Container horizontal */
-    background: #fff; /* Hintergrundfarbe des Containers */
-    padding: 20px; /* Innenabstand */
-    border-radius: 10px; /* Abgerundete Ecken */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schatteneffekt */
+    /* Hintergrundfarbe, Padding, Border-Radius und Box-Shadow wurden entfernt */
 }
 
 /* Stile für die Überschrift */
 .anton-sc {
     font-family: 'Anton SC', sans-serif; /* Schriftart für die Überschrift */
-    font-size: 4.5em; /* Größe der Überschrift */
-    color: #3B5323; /* Farbe für die Überschrift (dunkles Marineblau) */
+    font-size: 3em; /* Erhöhte Größe der Überschrift */
+    color: #3B5323; /* Farbe für die Überschrift: Mocha Green */
     margin-bottom: 20px; /* Abstand nach unten */
 }
 
