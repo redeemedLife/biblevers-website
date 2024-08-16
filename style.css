@@ -1,6 +1,6 @@
 /* Allgemeine Stile für die gesamte Seite */
 body {
-    font-family: 'Manrope', sans-serif; /* Default-Schriftart für den Body-Text */
+    font-family: 'DM Sans', sans-serif; /* Standard-Schriftart für den Body-Text */
     background-color: #f4f4f4; /* Hintergrundfarbe */
     color: #333; /* Textfarbe */
     text-align: center; /* Zentriert den Text */
@@ -19,7 +19,7 @@ body {
 }
 
 /* Stile für die Überschrift */
-h1 {
+.anton-sc {
     font-family: 'Anton SC', sans-serif; /* Schriftart für die Überschrift */
     font-size: 2.5em; /* Größe der Überschrift */
     color: #191970; /* Farbe für die Überschrift (dunkles Marineblau) */
@@ -27,16 +27,9 @@ h1 {
 }
 
 /* Stile für den Text unter der Überschrift */
-p {
-    font-family: 'Manrope', sans-serif; /* Schriftart für den Text */
+.dm-sans {
+    font-family: 'DM Sans', sans-serif; /* Schriftart für den Text */
     font-size: 1.2em; /* Schriftgröße für den Text */
     color: #333; /* Textfarbe */
     margin-top: 20px; /* Abstand nach oben */
-}
-
-/* Weitere spezifische Stile für Manrope */
-.manrope {
-    font-family: 'Manrope', sans-serif; /* Schriftart für spezifische Texte */
-    font-weight: 400; /* Gewicht der Schriftart */
-    font-style: normal; /* Stil der Schriftart */
 }
