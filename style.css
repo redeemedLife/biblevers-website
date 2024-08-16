@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Anton SC', sans-serif;  /* Verwende die Google Font */
     background-color: #f4f4f4;
     color: #333;
     text-align: center;
@@ -16,23 +16,22 @@ body {
 }
 
 h1 {
+    font-family: 'Anton SC', sans-serif; /* Verwende die Google Font */
     font-size: 2.5em;  /* Größere Schriftgröße für die Überschrift */
     color: #191970;    /* Farbe für die Überschrift (dunkles Marineblau) */
     margin-bottom: 20px;
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
+p {
+    font-family: 'Anton SC', sans-serif; /* Verwende die Google Font */
+    font-size: 1.2em;  /* Schriftgröße für den Bibelvers */
+    color: #333;       /* Textfarbe für den Bibelvers */
+    margin-top: 20px;
 }
 
-button:hover {
-    background-color: #45a049;
+/* Beispiel für die Klasse .anton-sc-regular */
+.antonsc-regular {
+    font-family: 'Anton SC', sans-serif;
+    font-weight: 400; /* Normalgewicht */
+    font-style: normal; /* Normale Schriftart-Stil */
 }
-
-
