@@ -18,9 +18,9 @@ body {
 /* Stile für die Überschrift */
 .anton-sc {
     font-family: 'Anton SC', sans-serif; /* Schriftart für die Überschrift */
-    font-size: 3em; /* Erhöhte Größe der Überschrift */
+    font-size: 1em; /* Erhöhte Größe der Überschrift */
     color: #3B5323; /* Farbe für die Überschrift: Mocha Green */
-    margin-bottom: 20px; /* Abstand nach unten */
+    margin-bottom: 40px; /* Abstand nach unten */
 }
 
 /* Stile für den Text unter der Überschrift */
