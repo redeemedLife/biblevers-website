@@ -15,9 +15,9 @@ body {
 .container {
     max-width: 600px; /* Maximale Breite des Containers */
     margin: 0 auto; /* Zentriert den Container horizontal */
-    background: rgba(255, 255, 255, 0.8); /* Weißer Hintergrund mit Transparenz */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
+    /* Hintergrundfarbe und Transparenz entfernt */
 }
 
 /* Stile für die Überschrift */
