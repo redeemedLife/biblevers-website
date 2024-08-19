@@ -18,19 +18,21 @@ body {
 /* Container für zentrierten Inhalt */
 .container {
     max-width: 90%; /* Maximale Breite des Containers */
-    background: rgba(255, 255, 255, 0.7); /* Weißer Hintergrund mit Transparenz */
+    background: rgba(255, 255, 255, 0.5); /* Hintergrund mit Transparenz für Container */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
     text-align: center; /* Zentriert den Text */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten für besseren Kontrast */
+    position: relative; /* Positionierung für den Verlauf */
 }
 
 /* Stile für die Überschrift */
 .anton-sc {
     font-family: 'Anton SC', sans-serif; /* Schriftart für die Überschrift */
     font-size: 2.5em; /* Größe der Überschrift */
-    color: #94774C; /* Farbe für die Überschrift: Cream */
+    color: #F5F5F5; /* Farbe für die Überschrift: Cream-Weiß */
     margin-bottom: 20px; /* Abstand nach unten */
+    position: relative; /* Positionierung für den Verlauf */
 }
 
 /* Stile für den Text unter der Überschrift */
@@ -38,6 +40,20 @@ body {
     font-family: 'DM Sans', sans-serif; /* Schriftart für den Text */
     font-size: 1.5em; /* Schriftgröße für den Text */
     color: #6F4F28; /* Farbe für den Text: leicht dunkler Cream */
+    position: relative; /* Positionierung für den Verlauf */
+}
+
+/* Verlaufshintergrund für den Textbereich */
+.container::before {
+    content: ""; /* Leerer Inhalt für den Pseudo-Element */
+    position: absolute; /* Absolute Positionierung */
+    top: 0; /* Oben */
+    left: 0; /* Links */
+    right: 0; /* Rechts */
+    bottom: 0; /* Unten */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%); /* Verlauf von oben nach unten */
+    z-index: -1; /* Hinter dem Text platzieren */
+    border-radius: 10px; /* Gleiche Ecken-Rundung wie der Container */
 }
 
 /* Für Bildschirme bis 768px Breite (Tablets und kleinere Laptops) */
@@ -71,3 +87,4 @@ body {
         font-size: 1em; /* Weitere Verkleinerung der Schriftgröße für den Text */
     }
 }
+
