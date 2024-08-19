@@ -11,6 +11,7 @@ body {
     padding: 0; /* Kein Padding */
     height: 100vh; /* Höhe des Viewports, um sicherzustellen, dass das Hintergrundbild den gesamten Bildschirm abdeckt */
     overflow: hidden; /* Verhindert das Scrollen auf der Seite */
+    position: relative; /* Position für den Verlauf */
 }
 
 /* Container für zentrierten Inhalt */
@@ -19,11 +20,8 @@ body {
     max-width: 800px; /* Maximale Breite des Containers */
     margin: 0 auto; /* Zentriert den Container horizontal */
     padding: 20px; /* Innenabstand */
-    background: none; /* Kein Hintergrund für den Container */
-    position: absolute; /* Positionierung, um die Platzierung des Containers zu steuern */
-    top: 45%; /* Positioniert den Container etwas unterhalb der Mitte des Viewports */
-    left: 50%; /* Positioniert den Container in der Mitte des Viewports */
-    transform: translate(-50%, -45%); /* Verschiebt den Container */
+    position: relative; /* Positionierung, um den Verlauf über den Container hinweg zu steuern */
+    z-index: 1; /* Sicherstellen, dass der Container über dem Verlauf liegt */
 }
 
 /* Stile für die Überschrift */
@@ -34,8 +32,6 @@ body {
     -webkit-background-clip: text; /* Hintergrund nur für den Text anwenden */
     -webkit-text-fill-color: transparent; /* Textfarbe transparent machen, damit der Verlauf sichtbar wird */
     margin-bottom: 10px; /* Abstand nach unten */
-    position: relative; /* Position für z-index Steuerung */
-    z-index: 1; /* Setzt die Überschrift über den Verlauf */
 }
 
 /* Stile für den Text unter der Überschrift */
@@ -44,20 +40,18 @@ body {
     font-size: 1.5em; /* Größere Schriftgröße für den Text */
     color: #E8E4C9; /* Etwas dunklere Farbe für den Text */
     margin-top: 20px; /* Abstand nach oben */
-    position: relative; /* Position für z-index Steuerung */
-    z-index: 1; /* Setzt den Text über den Verlauf */
 }
 
 /* Blendungseffekt hinter dem Text und der Überschrift */
-body::before {
+.container::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -10%; /* Leicht über dem Container */
     left: 0;
     width: 100%;
-    height: 50%; /* Höhe des Verlaufs auf die obere Hälfte des Bildschirms beschränkt */
-    background: radial-gradient(circle at center top, rgba(148, 119, 76, 0.8), rgba(148, 119, 76, 0) 70%);
-    z-index: 0; /* Setzt den Verlauf unter den Text und die Überschrift */
+    height: 120%; /* Deckt mehr als nur den Container ab */
+    background: radial-gradient(circle at top center, rgba(148, 119, 76, 0.7), rgba(148, 119, 76, 0) 80%);
+    z-index: -1; /* Setzt den Verlauf hinter den Text */
 }
 
 /* Responsive Design Anpassungen */
@@ -90,3 +84,4 @@ body::before {
         top: 35%; /* Container weiter nach oben verschieben */
     }
 }
+
