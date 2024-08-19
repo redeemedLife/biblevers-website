@@ -1,60 +1,69 @@
 /* Allgemeine Stile für die gesamte Seite */
 body {
-    font-family: 'DM Sans', sans-serif; /* Standard-Schriftart für den Text */
+    font-family: 'DM Sans', sans-serif; /* Standard-Schriftart für den Body-Text */
     background-image: url('https://github.com/redeemedLife/biblevers-website/blob/main/_70248f89-e0c0-4e28-a6d0-c28bd936e807.jpeg?raw=true'); /* Pfad zum Hintergrundbild */
     background-size: cover; /* Hintergrundbild vollständig abdecken */
-    background-position: top center; /* Bild weiter oben zentrieren */
+    background-position: center; /* Bild zentrieren */
     background-repeat: no-repeat; /* Bild nicht wiederholen */
-    color: #F5DEB3; /* Textfarbe: Weizen */
-    display: flex; /* Flexbox-Layout für Zentrierung */
-    justify-content: center; /* Horizontale Zentrierung */
-    align-items: flex-start; /* Vertikale Ausrichtung nach oben */
-    height: 100vh; /* Höhe des Viewports */
+    color: #333; /* Textfarbe */
+    text-align: center; /* Zentriert den Text */
     margin: 0; /* Kein Margin */
+    padding: 0; /* Kein Padding */
+}
+
+/* Container für zentrierten Inhalt */
+.container {
+    max-width: 600px; /* Maximale Breite des Containers */
+    margin: 0 auto; /* Zentriert den Container horizontal */
     padding: 20px; /* Innenabstand */
+    margin-top: 100px; /* Abstand von oben erhöhen, um den Container nach unten zu verschieben */
+    border-radius: 10px; /* Abgerundete Ecken */
+    background: rgba(255, 255, 255, 0.7); /* Leicht transparenter Hintergrund, um den Text hervorzuheben */
 }
 
 /* Stile für die Überschrift */
 .anton-sc {
     font-family: 'Anton SC', sans-serif; /* Schriftart für die Überschrift */
-    font-size: 3em; /* Größe der Überschrift */
-    color: #3B5323; /* Mocha-Farbe für die Überschrift */
+    font-size: 3em; /* Erhöhte Größe der Überschrift */
+    color: #3B5323; /* Farbe für die Überschrift: Mocha Green */
     margin-bottom: 20px; /* Abstand nach unten */
-    text-align: center; /* Zentrierung des Textes */
 }
 
 /* Stile für den Text unter der Überschrift */
 .dm-sans {
     font-family: 'DM Sans', sans-serif; /* Schriftart für den Text */
-    font-size: 1.2em; /* Größe für den Text */
-    color: #F5DEB3; /* Weizenfarbe für den Text */
-    margin-top: 10px; /* Abstand nach oben */
-    text-align: center; /* Zentrierung des Textes */
+    font-size: 1.2em; /* Schriftgröße für den Text */
+    color: #F5F5DC; /* Farbe für den Text: Weizen */
+    margin-top: 20px; /* Abstand nach oben */
 }
 
-/* Container für zentrierten Inhalt */
-.container {
-    width: 100%; /* Volle Breite */
-    padding: 0; /* Kein Innenabstand */
-    background: transparent; /* Kein Hintergrund */
-}
-
-/* Medienabfragen für mobile Geräte */
+/* Responsive Design Anpassungen */
 @media (max-width: 768px) {
     .anton-sc {
-        font-size: 2.5em; /* Kleinere Schriftgröße für die Überschrift auf Mobilgeräten */
+        font-size: 2.5em; /* Kleinere Schriftgröße auf kleineren Bildschirmen */
     }
+
     .dm-sans {
-        font-size: 1em; /* Kleinere Schriftgröße für den Text auf Mobilgeräten */
+        font-size: 1em; /* Kleinere Schriftgröße auf kleineren Bildschirmen */
+    }
+
+    .container {
+        padding: 15px; /* Weniger Innenabstand auf kleineren Bildschirmen */
+        margin-top: 50px; /* Weniger Abstand von oben auf kleineren Bildschirmen */
     }
 }
 
 @media (max-width: 480px) {
     .anton-sc {
-        font-size: 2em; /* Noch kleinere Schriftgröße für sehr kleine Bildschirme */
+        font-size: 2em; /* Noch kleinere Schriftgröße auf sehr kleinen Bildschirmen */
     }
+
     .dm-sans {
-        font-size: 0.9em; /* Kleinere Schriftgröße für sehr kleine Bildschirme */
+        font-size: 0.9em; /* Noch kleinere Schriftgröße auf sehr kleinen Bildschirmen */
+    }
+
+    .container {
+        padding: 10px; /* Weniger Innenabstand auf sehr kleinen Bildschirmen */
+        margin-top: 30px; /* Weniger Abstand von oben auf sehr kleinen Bildschirmen */
     }
 }
-
