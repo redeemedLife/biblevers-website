@@ -21,9 +21,9 @@ body {
     padding: 20px; /* Innenabstand */
     background: none; /* Kein Hintergrund für den Container */
     position: absolute; /* Positionierung, um die Platzierung des Containers zu steuern */
-    top: 50%; /* Positioniert den Container in der Mitte des Viewports */
+    top: 40%; /* Positioniert den Container etwas unterhalb der Mitte des Viewports */
     left: 50%; /* Positioniert den Container in der Mitte des Viewports */
-    transform: translate(-50%, -50%); /* Verschiebt den Container um die Hälfte seiner Breite und Höhe, um ihn genau zu zentrieren */
+    transform: translate(-50%, -40%); /* Verschiebt den Container */
 }
 
 /* Stile für die Überschrift */
@@ -33,20 +33,6 @@ body {
     color: #F5F5DC; /* Farbe für die Überschrift: Cream */
     white-space: nowrap; /* Verhindert, dass der Text auf mehrere Zeilen umbricht */
     margin-bottom: 20px; /* Abstand nach unten */
-    position: relative; /* Position für z-index Steuerung */
-}
-
-.anton-sc::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255, 255, 224, 0.7), rgba(255, 255, 224, 0) 70%);
-    z-index: -1;
-    border-radius: 50%;
 }
 
 /* Stile für den Text unter der Überschrift */
@@ -58,6 +44,7 @@ body {
     position: relative; /* Position für z-index Steuerung */
 }
 
+/* Blendungseffekt hinter dem Text (unter der Überschrift) */
 .dm-sans::before {
     content: "";
     position: absolute;
@@ -66,7 +53,7 @@ body {
     transform: translate(-50%, -50%);
     width: 150%;
     height: 150%;
-    background: radial-gradient(circle, rgba(255, 255, 224, 0.5), rgba(255, 255, 224, 0) 70%);
+    background: radial-gradient(circle, rgba(142, 132, 62, 0.5), rgba(142, 132, 62, 0) 70%);
     z-index: -1;
     border-radius: 50%;
 }
@@ -83,8 +70,7 @@ body {
 
     .container {
         padding: 15px; /* Weniger Innenabstand auf kleineren Bildschirmen */
-        margin-top: 0; /* Kein zusätzlicher Abstand oben auf kleineren Bildschirmen */
-        top: 40%; /* Container etwas höher verschieben */
+        top: 35%; /* Container etwas höher verschieben */
     }
 }
 
@@ -99,7 +85,6 @@ body {
 
     .container {
         padding: 10px; /* Weniger Innenabstand auf sehr kleinen Bildschirmen */
-        margin-top: 0; /* Kein zusätzlicher Abstand oben auf sehr kleinen Bildschirmen */
         top: 30%; /* Container weiter nach oben verschieben */
     }
 }
