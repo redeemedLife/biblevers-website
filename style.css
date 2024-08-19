@@ -7,7 +7,7 @@ body {
     background-repeat: no-repeat; /* Bild nicht wiederholen */
     color: #333; /* Textfarbe */
     text-align: center; /* Zentriert den Text */
-    padding: 50px; /* Abstand vom Rand */
+    padding: 20px; /* Abstand vom Rand */
     margin: 0; /* Kein Margin */
 }
 
@@ -17,7 +17,6 @@ body {
     margin: 0 auto; /* Zentriert den Container horizontal */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
-    /* Hintergrundfarbe und Transparenz entfernt */
     background: none; /* Kein Hintergrund */
 }
 
@@ -35,4 +34,41 @@ body {
     font-size: 1.2em; /* Schriftgröße für den Text */
     color: #333; /* Textfarbe */
     margin-top: 20px; /* Abstand nach oben */
+}
+
+/* Medienabfragen für kleinere Bildschirme */
+@media (max-width: 768px) {
+    .anton-sc {
+        font-size: 2.5em; /* Kleinere Schriftgröße für kleinere Bildschirme */
+    }
+
+    .dm-sans {
+        font-size: 1em; /* Kleinere Schriftgröße für kleinere Bildschirme */
+    }
+
+    body {
+        padding: 10px; /* Weniger Padding für kleinere Bildschirme */
+    }
+
+    .container {
+        padding: 10px; /* Weniger Padding im Container für kleinere Bildschirme */
+    }
+}
+
+@media (max-width: 480px) {
+    .anton-sc {
+        font-size: 2em; /* Noch kleinere Schriftgröße für sehr kleine Bildschirme */
+    }
+
+    .dm-sans {
+        font-size: 0.9em; /* Noch kleinere Schriftgröße für sehr kleine Bildschirme */
+    }
+
+    body {
+        padding: 5px; /* Minimales Padding für sehr kleine Bildschirme */
+    }
+
+    .container {
+        padding: 5px; /* Minimales Padding im Container für sehr kleine Bildschirme */
+    }
 }
