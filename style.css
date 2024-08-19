@@ -5,62 +5,52 @@ body {
     background-size: cover; /* Hintergrundbild vollständig abdecken */
     background-position: center; /* Bild zentrieren */
     background-repeat: no-repeat; /* Bild nicht wiederholen */
-    background-attachment: fixed; /* Hintergrundbild fixieren, damit es beim Scrollen nicht verschoben wird */
     color: #333; /* Textfarbe */
     margin: 0; /* Kein Margin */
     padding: 0; /* Kein Padding */
-    height: 100vh; /* Vollständige Höhe des Viewports */
-    display: flex; /* Flexbox für zentrierten Inhalt */
-    align-items: center; /* Vertikale Zentrierung des Inhalts */
-    justify-content: center; /* Horizontale Zentrierung des Inhalts */
 }
 
 /* Container für zentrierten Inhalt */
 .container {
-    max-width: 90%; /* Maximale Breite des Containers */
-    background: rgba(255, 255, 255, 0.5); /* Hintergrund mit Transparenz für Container */
+    max-width: 800px; /* Maximale Breite des Containers */
+    margin: 0 auto; /* Zentriert den Container horizontal */
     padding: 20px; /* Innenabstand */
+    position: absolute; /* Absolute Positionierung für zentrierte Platzierung */
+    top: 35%; /* Positionierung von oben */
+    left: 50%; /* Zentriert von der linken Seite */
+    transform: translate(-50%, -35%); /* Zentriert den Container */
+    background: rgba(148, 119, 76, 0.6); /* Hintergrundfarbe mit Transparenz (#94774C) */
     border-radius: 10px; /* Abgerundete Ecken */
-    text-align: center; /* Zentriert den Text */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten für besseren Kontrast */
-    position: relative; /* Positionierung für den Verlauf */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Schatten für besseren Kontrast */
 }
 
 /* Stile für die Überschrift */
 .anton-sc {
     font-family: 'Anton SC', sans-serif; /* Schriftart für die Überschrift */
-    font-size: 2.5em; /* Größe der Überschrift */
-    color: #F5F5F5; /* Farbe für die Überschrift: Cream-Weiß */
+    font-size: 3em; /* Erhöhte Größe der Überschrift */
+    color: #F5F5DC; /* Farbe für die Überschrift: Cream-Weiß */
     margin-bottom: 20px; /* Abstand nach unten */
-    position: relative; /* Positionierung für den Verlauf */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Leichtes schwarzes Textschatten für besseren Kontrast */
 }
 
 /* Stile für den Text unter der Überschrift */
 .dm-sans {
     font-family: 'DM Sans', sans-serif; /* Schriftart für den Text */
     font-size: 1.5em; /* Schriftgröße für den Text */
-    color: #6F4F28; /* Farbe für den Text: leicht dunkler Cream */
-    position: relative; /* Positionierung für den Verlauf */
+    color: #FFFFFF; /* Textfarbe: Weiß */
+    background: rgba(255, 255, 255, 0.4); /* Hintergrundfarbe des Textes leicht transparent */
+    padding: 20px; /* Innenabstand */
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Schatten für besseren Kontrast */
+    display: inline-block; /* Verhindert, dass der Hintergrund den gesamten Container abdeckt */
 }
 
-/* Verlaufshintergrund für den Textbereich */
-.container::before {
-    content: ""; /* Leerer Inhalt für den Pseudo-Element */
-    position: absolute; /* Absolute Positionierung */
-    top: 0; /* Oben */
-    left: 0; /* Links */
-    right: 0; /* Rechts */
-    bottom: 0; /* Unten */
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%); /* Verlauf von oben nach unten */
-    z-index: -1; /* Hinter dem Text platzieren */
-    border-radius: 10px; /* Gleiche Ecken-Rundung wie der Container */
-}
-
-/* Für Bildschirme bis 768px Breite (Tablets und kleinere Laptops) */
-@media (max-width: 768px) {
+/* Medienabfragen für die mobile Ansicht */
+@media only screen and (max-width: 600px) {
     .container {
-        width: 90%; /* Container auf 90% der Breite des Viewports setzen */
-        padding: 15px; /* Weniger Padding auf kleinen Bildschirmen */
+        padding: 10px; /* Innenabstand für mobile Geräte */
+        top: 25%; /* Verschiebung nach unten für mobile Geräte */
+        transform: translate(-50%, -25%); /* Verschiebung nach oben für mobile Geräte */
     }
 
     .anton-sc {
@@ -71,20 +61,3 @@ body {
         font-size: 1.2em; /* Kleinere Schriftgröße für den Text */
     }
 }
-
-/* Für Bildschirme bis 480px Breite (Smartphones im Hochformat) */
-@media (max-width: 480px) {
-    .container {
-        width: 95%; /* Container auf 95% der Breite des Viewports setzen */
-        padding: 10px; /* Noch weniger Padding auf sehr kleinen Bildschirmen */
-    }
-
-    .anton-sc {
-        font-size: 1.5em; /* Weitere Verkleinerung der Schriftgröße für die Überschrift */
-    }
-
-    .dm-sans {
-        font-size: 1em; /* Weitere Verkleinerung der Schriftgröße für den Text */
-    }
-}
-
