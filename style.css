@@ -12,52 +12,45 @@ body {
 
 /* Container für zentrierten Inhalt */
 .container {
-    max-width: 800px; /* Maximale Breite des Containers */
-    margin: 0 auto; /* Zentriert den Container horizontal */
-    padding: 20px; /* Innenabstand */
-    position: absolute; /* Absolute Positionierung für zentrierte Platzierung */
-    top: 35%; /* Positionierung von oben */
-    left: 50%; /* Zentriert von der linken Seite */
-    transform: translate(-50%, -35%); /* Zentriert den Container */
-    background: linear-gradient(to bottom, rgba(148, 119, 76, 0.8), rgba(148, 119, 76, 0)); /* Verlauf für besseren Kontrast */
+    position: absolute; /* Positionierung relativ zum Bildschirm */
+    top: 35%; /* Position von oben (35% des Viewports) */
+    left: 50%; /* Position von links (50% des Viewports) */
+    transform: translate(-50%, -50%); /* Zentriert den Container */
+    max-width: 90%; /* Maximale Breite des Containers */
+    background: rgba(148, 119, 76, 0.7); /* Hintergrundfarbe mit Transparenz für bessere Lesbarkeit */
     border-radius: 10px; /* Abgerundete Ecken */
+    padding: 20px; /* Innenabstand */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Schatten für besseren Kontrast */
+    text-align: center; /* Zentriert den Text */
+    background: linear-gradient(to bottom, rgba(148, 119, 76, 0.7), rgba(148, 119, 76, 0) 70%); /* Verlauf für besseren Kontrast */
 }
 
 /* Stile für die Überschrift */
 .anton-sc {
     font-family: 'Anton SC', sans-serif; /* Schriftart für die Überschrift */
     font-size: 3em; /* Erhöhte Größe der Überschrift */
-    color: #F5F5DC; /* Farbe für die Überschrift: Cream-Weiß */
+    color: #F5F5DC; /* Farbe für die Überschrift: Cream */
     margin-bottom: 20px; /* Abstand nach unten */
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Leichtes schwarzes Textschatten für besseren Kontrast */
 }
 
 /* Stile für den Text unter der Überschrift */
 .dm-sans {
     font-family: 'DM Sans', sans-serif; /* Schriftart für den Text */
     font-size: 1.5em; /* Schriftgröße für den Text */
-    color: #FFFFFF; /* Textfarbe: Weiß */
-    background: rgba(255, 255, 255, 0.6); /* Hintergrundfarbe des Textes leicht transparent */
-    padding: 20px; /* Innenabstand */
-    border-radius: 10px; /* Abgerundete Ecken */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Schatten für besseren Kontrast */
-    display: inline-block; /* Verhindert, dass der Hintergrund den gesamten Container abdeckt */
+    color: #FFFFFF; /* Textfarbe für den Vers */
+    margin-top: 20px; /* Abstand nach oben */
 }
 
-/* Medienabfragen für die mobile Ansicht */
-@media only screen and (max-width: 600px) {
+/* Responsive Design */
+@media (max-width: 768px) {
     .container {
-        padding: 10px; /* Innenabstand für mobile Geräte */
-        top: 25%; /* Verschiebung nach unten für mobile Geräte */
-        transform: translate(-50%, -25%); /* Verschiebung nach oben für mobile Geräte */
+        width: 90%; /* Maximale Breite für kleinere Bildschirme */
+        padding: 10px; /* Innenabstand für kleinere Bildschirme */
     }
-
     .anton-sc {
-        font-size: 2em; /* Kleinere Schriftgröße für die Überschrift */
+        font-size: 2.5em; /* Kleinere Schriftgröße für kleinere Bildschirme */
     }
-
     .dm-sans {
-        font-size: 1.2em; /* Kleinere Schriftgröße für den Text */
+        font-size: 1.2em; /* Kleinere Schriftgröße für kleinere Bildschirme */
     }
 }
