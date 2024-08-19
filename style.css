@@ -5,31 +5,34 @@ body {
     background-size: cover; /* Bildgröße anpassen, um den gesamten Hintergrund zu bedecken */
     background-repeat: no-repeat; /* Verhindert das Wiederholen des Bildes */
     background-attachment: fixed; /* Bild bleibt fixiert beim Scrollen */
-    color: #fff; /* Textfarbe */
+    color: #fff; /* Textfarbe auf Weiß setzen */
     text-align: center; /* Zentriert den Text */
     padding: 50px; /* Abstand vom Rand */
     margin: 0; /* Kein Margin */
 }
 
-/* Entferne die Stile für den Container-Kasten */
+/* Stile für den Container */
 .container {
     max-width: 600px; /* Maximale Breite des Containers */
     margin: 0 auto; /* Zentriert den Container horizontal */
-    /* Hintergrundfarbe, Padding, Border-Radius und Box-Shadow wurden entfernt */
+    background-color: rgba(0, 0, 0, 0.5); /* Halbtransparenter Hintergrund */
+    padding: 20px; /* Innenabstand */
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
 }
 
 /* Stile für die Überschrift */
 .anton-sc {
     font-family: 'Anton SC', sans-serif; /* Schriftart für die Überschrift */
-    font-size: 2.5em; /* Erhöhte Größe der Überschrift */
-    color: #fff; /* Farbe für die Überschrift: Mocha Green */
+    font-size: 4em; /* Erhöhte Größe der Überschrift */
+    color: #fff; /* Farbe für die Überschrift auf Weiß setzen */
     margin-bottom: 40px; /* Abstand nach unten */
 }
 
 /* Stile für den Text unter der Überschrift */
 .dm-sans {
     font-family: 'DM Sans', sans-serif; /* Schriftart für den Text */
-    font-size: 1.3em; /* Schriftgröße für den Text */
-    color: #fff; /* Textfarbe */
-    margin-top: 20px; /* Abstand nach oben */
+    font-size: 1.2em; /* Schriftgröße für den Text */
+    color: #fff; /* Textfarbe auf Weiß setzen */
 }
+
