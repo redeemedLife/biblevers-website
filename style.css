@@ -33,6 +33,8 @@ body {
     color: #94774C; /* Farbe für die Überschrift: Mocha */
     white-space: nowrap; /* Verhindert, dass der Text auf mehrere Zeilen umbricht */
     margin-bottom: 20px; /* Abstand nach unten */
+    position: relative; /* Position für z-index Steuerung */
+    z-index: 1; /* Setzt die Überschrift über den Verlauf */
 }
 
 /* Stile für den Text unter der Überschrift */
@@ -42,20 +44,19 @@ body {
     color: #E8E4C9; /* Etwas dunklere Farbe für den Text */
     margin-top: 20px; /* Abstand nach oben */
     position: relative; /* Position für z-index Steuerung */
+    z-index: 1; /* Setzt den Text über den Verlauf */
 }
 
-/* Stärkere Blendungseffekt hinter dem Text (unter der Überschrift) */
-.dm-sans::before {
+/* Blendungseffekt hinter dem Text und der Überschrift */
+body::before {
     content: "";
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 150%;
-    height: 150%;
-    background: radial-gradient(circle, rgba(142, 132, 62, 0.8), rgba(142, 132, 62, 0) 70%);
-    z-index: -1;
-    border-radius: 50%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(148, 119, 76, 0.8), rgba(148, 119, 76, 0) 70%);
+    z-index: 0; /* Setzt den Verlauf unter den Text und die Überschrift */
 }
 
 /* Responsive Design Anpassungen */
