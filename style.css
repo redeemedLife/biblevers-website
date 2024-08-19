@@ -24,15 +24,14 @@ body {
     box-shadow: none; /* Kein Schatten für den Container */
     text-align: center; /* Zentriert den Text innerhalb des Containers */
     position: relative; /* Positionierung relativ für die vertikale Zentrierung */
-    top: 20%; /* 20% vom oberen Rand des Viewports */
-    margin: 0; /* Kein Margin */
+    top: 15%; /* Positioniere den Container 15% vom oberen Rand des Viewports */
 }
 
 /* Stile für die Überschrift */
 .anton-sc {
     font-family: 'Anton SC', sans-serif; /* Schriftart für die Überschrift */
     font-size: 3em; /* Erhöhte Größe der Überschrift */
-    color: #F5F5DC; /* Farbe für die Überschrift: Weizenfarbe */
+    color: #3B5323; /* Farbe für die Überschrift: Mocha Green */
     margin-bottom: 20px; /* Abstand nach unten */
 }
 
@@ -56,7 +55,7 @@ body {
 
     .container {
         padding: 10px; /* Weniger Padding im Container für kleinere Bildschirme */
-        top: 25%; /* 25% vom oberen Rand des Viewports für kleinere Bildschirme */
+        top: 20%; /* 20% vom oberen Rand des Viewports für kleinere Bildschirme */
     }
 }
 
@@ -71,6 +70,6 @@ body {
 
     .container {
         padding: 5px; /* Minimales Padding im Container für sehr kleine Bildschirme */
-        top: 30%; /* 30% vom oberen Rand des Viewports für sehr kleine Bildschirme */
+        top: 25%; /* 25% vom oberen Rand des Viewports für sehr kleine Bildschirme */
     }
 }
