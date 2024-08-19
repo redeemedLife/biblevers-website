@@ -5,67 +5,50 @@ body {
     background-size: cover; /* Hintergrundbild vollständig abdecken */
     background-position: center; /* Bild zentrieren */
     background-repeat: no-repeat; /* Bild nicht wiederholen */
+    background-attachment: fixed; /* Hintergrundbild fixieren, damit es beim Scrollen nicht verschoben wird */
     color: #333; /* Textfarbe */
     margin: 0; /* Kein Margin */
     padding: 0; /* Kein Padding */
+    height: 100vh; /* Vollständige Höhe des Viewports */
+    display: flex; /* Flexbox für zentrierten Inhalt */
+    align-items: center; /* Vertikale Zentrierung des Inhalts */
+    justify-content: center; /* Horizontale Zentrierung des Inhalts */
 }
 
 /* Container für zentrierten Inhalt */
 .container {
-    position: absolute;
-    top: 35%; /* Startposition bei 35% des Viewports von oben */
-    left: 50%; /* Zentrieren des Containers horizontal */
-    transform: translate(-50%, -35%); /* Vertikale Verschiebung nach oben und horizontale Zentrierung */
-    max-width: 600px; /* Maximale Breite des Containers */
+    max-width: 90%; /* Maximale Breite des Containers */
+    background: rgba(255, 255, 255, 0.7); /* Weißer Hintergrund mit Transparenz */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
-    text-align: center; /* Zentriert den Text innerhalb des Containers */
-    background: transparent; /* Hintergrund des Containers auf transparent setzen */
-    position: relative; /* Für das ::before Pseudoelement */
-}
-
-/* Hintergrund-Gradient hinter dem Text */
-.container::before {
-    content: '';
-    position: absolute;
-    top: -20%; /* Gradient beginnt 20% oberhalb des Containers */
-    left: 0;
-    width: 100%;
-    height: 140%; /* Deckt den gesamten Container mit etwas zusätzlichen Platz ab */
-    background: radial-gradient(circle, rgba(148, 119, 76, 0.7) 0%, rgba(148, 119, 76, 0) 80%);
-    z-index: -1; /* Hintergrund-Gradient hinter dem Container */
-    border-radius: 10px; /* Abgerundete Ecken für den Hintergrund-Gradient */
+    text-align: center; /* Zentriert den Text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten für besseren Kontrast */
 }
 
 /* Stile für die Überschrift */
 .anton-sc {
     font-family: 'Anton SC', sans-serif; /* Schriftart für die Überschrift */
-    font-size: 3em; /* Erhöhte Größe der Überschrift */
-    color: #F5F5DC; /* Cream-Farbe für die Überschrift */
+    font-size: 2.5em; /* Größe der Überschrift */
+    color: #94774C; /* Farbe für die Überschrift: Cream */
     margin-bottom: 20px; /* Abstand nach unten */
-    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.8); /* Leichte Schattierung für bessere Lesbarkeit */
 }
 
 /* Stile für den Text unter der Überschrift */
 .dm-sans {
     font-family: 'DM Sans', sans-serif; /* Schriftart für den Text */
-    font-size: 1.4em; /* Schriftgröße für den Text */
-    color: #FAF0E6; /* Cream-Farbe für den Text */
-    margin-top: 20px; /* Abstand nach oben */
-    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.7); /* Leichte Schattierung für bessere Lesbarkeit */
+    font-size: 1.5em; /* Schriftgröße für den Text */
+    color: #6F4F28; /* Farbe für den Text: leicht dunkler Cream */
 }
 
-/* Responsive Design für kleine Bildschirme */
+/* Für Bildschirme bis 768px Breite (Tablets und kleinere Laptops) */
 @media (max-width: 768px) {
     .container {
         width: 90%; /* Container auf 90% der Breite des Viewports setzen */
-        top: 40%; /* Container weiter nach unten verschieben */
-        transform: translate(-50%, -40%); /* Anpassung der Vertikalposition */
         padding: 15px; /* Weniger Padding auf kleinen Bildschirmen */
     }
 
     .anton-sc {
-        font-size: 2.5em; /* Kleinere Schriftgröße für die Überschrift */
+        font-size: 2em; /* Kleinere Schriftgröße für die Überschrift */
     }
 
     .dm-sans {
@@ -73,16 +56,15 @@ body {
     }
 }
 
+/* Für Bildschirme bis 480px Breite (Smartphones im Hochformat) */
 @media (max-width: 480px) {
     .container {
         width: 95%; /* Container auf 95% der Breite des Viewports setzen */
-        top: 45%; /* Container weiter nach unten verschieben */
-        transform: translate(-50%, -45%); /* Weitere Anpassung der Vertikalposition */
         padding: 10px; /* Noch weniger Padding auf sehr kleinen Bildschirmen */
     }
 
     .anton-sc {
-        font-size: 2em; /* Weitere Verkleinerung der Schriftgröße für die Überschrift */
+        font-size: 1.5em; /* Weitere Verkleinerung der Schriftgröße für die Überschrift */
     }
 
     .dm-sans {
