@@ -5,20 +5,20 @@ body {
     background-size: cover; /* Hintergrundbild vollständig abdecken */
     background-position: center; /* Bild zentrieren */
     background-repeat: no-repeat; /* Bild nicht wiederholen */
-    color: #333; /* Standard-Textfarbe */
-    text-align: center; /* Text zentrieren */
+    color: #333; /* Textfarbe */
+    text-align: center; /* Zentriert den Text */
     margin: 0; /* Kein Margin */
     padding: 0; /* Kein Padding */
-    height: 100vh; /* Höhe des Viewports, um sicherzustellen, dass das Hintergrundbild den gesamten Bildschirm abdeckt */
+    height: 100vh; /* Höhe des Viewports, um sicherzustellen, dass der Hintergrundbild den gesamten Bildschirm abdeckt */
     overflow: hidden; /* Verhindert das Scrollen auf der Seite */
 }
 
 /* Container für zentrierten Inhalt */
 .container {
-    max-width: 600px; /* Maximale Breite des Containers */
+    width: 90%; /* Breite des Containers */
+    max-width: 800px; /* Maximale Breite des Containers */
     margin: 0 auto; /* Zentriert den Container horizontal */
     padding: 20px; /* Innenabstand */
-    border-radius: 10px; /* Abgerundete Ecken */
     background: none; /* Kein Hintergrund für den Container */
     position: absolute; /* Positionierung, um die Platzierung des Containers zu steuern */
     top: 50%; /* Positioniert den Container in der Mitte des Viewports */
@@ -29,8 +29,9 @@ body {
 /* Stile für die Überschrift */
 .anton-sc {
     font-family: 'Anton SC', sans-serif; /* Schriftart für die Überschrift */
-    font-size: 2.5em; /* Verkleinerte Größe der Überschrift */
-    color: #3B5323; /* Farbe für die Überschrift: Mocha/Jägergrün */
+    font-size: 2.5em; /* Größe der Überschrift */
+    color: #F5F5DC; /* Farbe für die Überschrift: Cream */
+    white-space: nowrap; /* Verhindert, dass der Text auf mehrere Zeilen umbricht */
     margin-bottom: 20px; /* Abstand nach unten */
 }
 
@@ -38,7 +39,7 @@ body {
 .dm-sans {
     font-family: 'DM Sans', sans-serif; /* Schriftart für den Text */
     font-size: 1.5em; /* Größere Schriftgröße für den Text */
-    color: #D2B48C; /* Textfarbe: Dunkles Creme (Dark Cream) */
+    color: #E8E4C9; /* Etwas dunklere Farbe für den Text */
     margin-top: 20px; /* Abstand nach oben */
 }
 
@@ -61,7 +62,7 @@ body {
 
 @media (max-width: 480px) {
     .anton-sc {
-        font-size: 1.75em; /* Noch kleinere Schriftgröße auf sehr kleinen Bildschirmen */
+        font-size: 1.8em; /* Noch kleinere Schriftgröße auf sehr kleinen Bildschirmen */
     }
 
     .dm-sans {
