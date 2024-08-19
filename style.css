@@ -5,13 +5,23 @@ body {
     background-size: cover; /* Hintergrundbild vollständig abdecken */
     background-position: center; /* Bild zentrieren */
     background-repeat: no-repeat; /* Bild nicht wiederholen */
-    color: #333; /* Textfarbe */
-    text-align: center; /* Zentriert den Text */
     margin: 0; /* Kein Margin */
     padding: 0; /* Kein Padding */
     height: 100vh; /* Höhe des Viewports, um sicherzustellen, dass das Hintergrundbild den gesamten Bildschirm abdeckt */
     overflow: hidden; /* Verhindert das Scrollen auf der Seite */
     position: relative; /* Position für den Verlauf */
+}
+
+/* Blendungseffekt hinter dem gesamten Bildschirm */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0; /* Beginn des Verlaufs am oberen Rand */
+    left: 0;
+    width: 100%;
+    height: 100%; /* Deckt den gesamten Bildschirm ab */
+    background: radial-gradient(circle at top center, rgba(148, 119, 76, 0.8), rgba(148, 119, 76, 0) 60%);
+    z-index: -1; /* Setzt den Verlauf hinter den Inhalt */
 }
 
 /* Container für zentrierten Inhalt */
@@ -20,9 +30,11 @@ body {
     max-width: 800px; /* Maximale Breite des Containers */
     margin: 0 auto; /* Zentriert den Container horizontal */
     padding: 20px; /* Innenabstand */
-    position: relative; /* Positionierung, um den Verlauf über den Container hinweg zu steuern */
+    position: absolute; /* Positionierung relativ zum Viewport */
+    top: 50%; /* Verschiebt den Container in die Mitte des Viewports */
+    transform: translateY(-50%); /* Verschiebt den Container um die eigene Höhe nach oben, um ihn zu zentrieren */
+    text-align: center; /* Zentriert den Text innerhalb des Containers */
     z-index: 1; /* Sicherstellen, dass der Container über dem Verlauf liegt */
-    top: 30%; /* Container näher zur Mitte verschieben */
 }
 
 /* Stile für die Überschrift */
@@ -33,6 +45,7 @@ body {
     -webkit-background-clip: text; /* Hintergrund nur für den Text anwenden */
     -webkit-text-fill-color: transparent; /* Textfarbe transparent machen, damit der Verlauf sichtbar wird */
     margin-bottom: 10px; /* Abstand nach unten */
+    color: #94774C; /* Farbcode für die Überschrift */
 }
 
 /* Stile für den Text unter der Überschrift */
@@ -41,18 +54,6 @@ body {
     font-size: 1.5em; /* Größere Schriftgröße für den Text */
     color: #E8E4C9; /* Etwas dunklere Farbe für den Text */
     margin-top: 20px; /* Abstand nach oben */
-}
-
-/* Blendungseffekt hinter dem Text und der Überschrift */
-.container::before {
-    content: "";
-    position: absolute;
-    top: -10%; /* Blendung über dem Container beginnen */
-    left: 0;
-    width: 100%;
-    height: 150%; /* Deckt mehr als nur den Container ab */
-    background: radial-gradient(circle at top center, rgba(148, 119, 76, 0.7), rgba(148, 119, 76, 0) 70%);
-    z-index: -1; /* Setzt den Verlauf hinter den Text */
 }
 
 /* Responsive Design Anpassungen */
@@ -67,7 +68,6 @@ body {
 
     .container {
         padding: 15px; /* Weniger Innenabstand auf kleineren Bildschirmen */
-        top: 40%; /* Container etwas höher verschieben */
     }
 }
 
@@ -82,6 +82,5 @@ body {
 
     .container {
         padding: 10px; /* Weniger Innenabstand auf sehr kleinen Bildschirmen */
-        top: 35%; /* Container weiter nach oben verschieben */
     }
 }
