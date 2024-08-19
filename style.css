@@ -18,7 +18,8 @@ body {
     margin: 0 auto; /* Zentriert den Container horizontal */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
-    background: transparent; /* Kein Hintergrund */
+    background: none; /* Kein Hintergrund für den Container */
+    box-shadow: none; /* Kein Schatten für den Container */
 }
 
 /* Stile für die Überschrift */
