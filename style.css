@@ -1,7 +1,10 @@
 /* Allgemeine Stile für die gesamte Seite */
 body {
     font-family: 'DM Sans', sans-serif; /* Standard-Schriftart für den Body-Text */
-    background-color: #f4f4f4; /* Hintergrundfarbe */
+    background-image: url('https://cdn.pixabay.com/photo/2017/05/07/21/40/sky-2293745_960_720.jpg'); /* Pfad zu deinem Hintergrundbild */
+    background-size: cover; /* Bildgröße anpassen, um den gesamten Hintergrund zu bedecken */
+    background-repeat: no-repeat; /* Verhindert das Wiederholen des Bildes */
+    background-attachment: fixed; /* Bild bleibt fixiert beim Scrollen */
     color: #333; /* Textfarbe */
     text-align: center; /* Zentriert den Text */
     padding: 50px; /* Abstand vom Rand */
