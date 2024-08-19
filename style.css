@@ -1,37 +1,38 @@
+/* Allgemeine Stile für die gesamte Seite */
 body {
-    font-family: 'DM Sans', sans-serif;
-    background-image: url('images/9093FDF6-BEF1-4D16-8D52-03DE53BC5351.jpg'); /* Pfad zu deinem Bild im Projektverzeichnis */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: #fff;
-    text-align: center;
-    padding: 50px;
-    margin: 0;
+    font-family: 'DM Sans', sans-serif; /* Standard-Schriftart für den Body-Text */
+    background-image: url('9093FDF6-BEF1-4D16-8D52-03DE53BC5351.jpg'); /* Pfad zum Hintergrundbild */
+    background-size: cover; /* Hintergrundbild vollständig abdecken */
+    background-position: center; /* Bild zentrieren */
+    background-repeat: no-repeat; /* Bild nicht wiederholen */
+    color: #333; /* Textfarbe */
+    text-align: center; /* Zentriert den Text */
+    padding: 50px; /* Abstand vom Rand */
+    margin: 0; /* Kein Margin */
 }
 
-/* Stile für den Container */
+/* Container für zentrierten Inhalt */
 .container {
     max-width: 600px; /* Maximale Breite des Containers */
     margin: 0 auto; /* Zentriert den Container horizontal */
-    background-color: rgba(0, 0, 0, 0.5); /* Halbtransparenter Hintergrund */
+    background: rgba(255, 255, 255, 0.8); /* Weißer Hintergrund mit Transparenz */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
 }
 
 /* Stile für die Überschrift */
 .anton-sc {
     font-family: 'Anton SC', sans-serif; /* Schriftart für die Überschrift */
-    font-size: 4em; /* Erhöhte Größe der Überschrift */
-    color: #fff; /* Farbe für die Überschrift auf Weiß setzen */
-    margin-bottom: 40px; /* Abstand nach unten */
+    font-size: 3em; /* Erhöhte Größe der Überschrift */
+    color: #3B5323; /* Farbe für die Überschrift: Mocha Green */
+    margin-bottom: 20px; /* Abstand nach unten */
 }
 
 /* Stile für den Text unter der Überschrift */
 .dm-sans {
     font-family: 'DM Sans', sans-serif; /* Schriftart für den Text */
     font-size: 1.2em; /* Schriftgröße für den Text */
-    color: #fff; /* Textfarbe auf Weiß setzen */
+    color: #333; /* Textfarbe */
+    margin-top: 20px; /* Abstand nach oben */
 }
 
