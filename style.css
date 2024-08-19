@@ -18,6 +18,7 @@ body {
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
     /* Hintergrundfarbe und Transparenz entfernt */
+    background: none; /* Kein Hintergrund */
 }
 
 /* Stile für die Überschrift */
@@ -35,4 +36,3 @@ body {
     color: #333; /* Textfarbe */
     margin-top: 20px; /* Abstand nach oben */
 }
-
