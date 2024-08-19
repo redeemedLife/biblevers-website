@@ -16,24 +16,24 @@ body {
     max-width: 600px; /* Maximale Breite des Containers */
     margin: 0 auto; /* Zentriert den Container horizontal */
     padding: 20px; /* Innenabstand */
-    margin-top: 100px; /* Abstand von oben erhöhen, um den Container nach unten zu verschieben */
+    margin-top: 150px; /* Abstand von oben erhöhen, um den Container weiter nach unten zu verschieben */
     border-radius: 10px; /* Abgerundete Ecken */
-    background: rgba(255, 255, 255, 0.7); /* Leicht transparenter Hintergrund, um den Text hervorzuheben */
+    /* Kein Hintergrund, um den weißen Kasten zu entfernen */
 }
 
 /* Stile für die Überschrift */
 .anton-sc {
     font-family: 'Anton SC', sans-serif; /* Schriftart für die Überschrift */
-    font-size: 3em; /* Erhöhte Größe der Überschrift */
-    color: #3B5323; /* Farbe für die Überschrift: Mocha Green */
+    font-size: 3em; /* Größe der Überschrift */
+    color: #F5F5DC; /* Farbe für die Überschrift: Cream */
     margin-bottom: 20px; /* Abstand nach unten */
 }
 
 /* Stile für den Text unter der Überschrift */
 .dm-sans {
     font-family: 'DM Sans', sans-serif; /* Schriftart für den Text */
-    font-size: 1.2em; /* Schriftgröße für den Text */
-    color: #F5F5DC; /* Farbe für den Text: Weizen */
+    font-size: 1.5em; /* Größere Schriftgröße für den Text */
+    color: #F5F5DC; /* Farbe für den Text: Cream */
     margin-top: 20px; /* Abstand nach oben */
 }
 
@@ -44,12 +44,12 @@ body {
     }
 
     .dm-sans {
-        font-size: 1em; /* Kleinere Schriftgröße auf kleineren Bildschirmen */
+        font-size: 1.2em; /* Kleinere Schriftgröße auf kleineren Bildschirmen */
     }
 
     .container {
         padding: 15px; /* Weniger Innenabstand auf kleineren Bildschirmen */
-        margin-top: 50px; /* Weniger Abstand von oben auf kleineren Bildschirmen */
+        margin-top: 100px; /* Weniger Abstand von oben auf kleineren Bildschirmen */
     }
 }
 
@@ -59,11 +59,12 @@ body {
     }
 
     .dm-sans {
-        font-size: 0.9em; /* Noch kleinere Schriftgröße auf sehr kleinen Bildschirmen */
+        font-size: 1em; /* Noch kleinere Schriftgröße auf sehr kleinen Bildschirmen */
     }
 
     .container {
         padding: 10px; /* Weniger Innenabstand auf sehr kleinen Bildschirmen */
-        margin-top: 30px; /* Weniger Abstand von oben auf sehr kleinen Bildschirmen */
+        margin-top: 70px; /* Weniger Abstand von oben auf sehr kleinen Bildschirmen */
     }
 }
+
