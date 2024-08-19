@@ -1,61 +1,51 @@
 /* Allgemeine Stile für die gesamte Seite */
 body {
-    font-family: 'DM Sans', sans-serif; /* Standard-Schriftart für den Body-Text */
-    background-image: url('https://github.com/redeemedLife/biblevers-website/raw/main/_70248f89-e0c0-4e28-a6d0-c28bd936e807.jpeg'); /* Pfad zum Hintergrundbild */
+    font-family: 'DM Sans', sans-serif; /* Standard-Schriftart für den Text */
+    background-image: url('https://github.com/redeemedLife/biblevers-website/blob/main/_70248f89-e0c0-4e28-a6d0-c28bd936e807.jpeg?raw=true'); /* Pfad zum Hintergrundbild */
     background-size: cover; /* Hintergrundbild vollständig abdecken */
-    background-position: center top; /* Bild oben zentriert */
+    background-position: top center; /* Bild weiter oben zentrieren */
     background-repeat: no-repeat; /* Bild nicht wiederholen */
-    color: #333; /* Standard Textfarbe */
-    margin: 0; /* Kein Margin */
-    min-height: 100vh; /* Minimale Höhe auf 100% des Viewports setzen */
-    padding: 0; /* Kein Padding auf dem Body */
-    display: flex; /* Flexbox aktivieren */
+    color: #F5DEB3; /* Textfarbe: Weizen */
+    display: flex; /* Flexbox-Layout für Zentrierung */
     justify-content: center; /* Horizontale Zentrierung */
-    align-items: center; /* Vertikale Zentrierung */
-    flex-direction: column; /* Vertikale Anordnung der Flex-Elemente */
-}
-
-/* Container für zentrierten Inhalt */
-.container {
-    max-width: 600px; /* Maximale Breite des Containers */
+    align-items: flex-start; /* Vertikale Ausrichtung nach oben */
+    height: 100vh; /* Höhe des Viewports */
+    margin: 0; /* Kein Margin */
     padding: 20px; /* Innenabstand */
-    border-radius: 10px; /* Abgerundete Ecken */
-    background: none; /* Kein Hintergrund für den Container */
-    box-shadow: none; /* Kein Schatten für den Container */
-    text-align: center; /* Zentriert den Text innerhalb des Containers */
-    position: relative; /* Positionierung relativ für die vertikale Zentrierung */
-    top: 15%; /* Positioniere den Container 15% vom oberen Rand des Viewports */
 }
 
 /* Stile für die Überschrift */
 .anton-sc {
     font-family: 'Anton SC', sans-serif; /* Schriftart für die Überschrift */
-    font-size: 3em; /* Erhöhte Größe der Überschrift */
-    color: #3B5323; /* Farbe für die Überschrift: Mocha Green */
+    font-size: 3em; /* Größe der Überschrift */
+    color: #3B5323; /* Mocha-Farbe für die Überschrift */
     margin-bottom: 20px; /* Abstand nach unten */
+    text-align: center; /* Zentrierung des Textes */
 }
 
 /* Stile für den Text unter der Überschrift */
 .dm-sans {
     font-family: 'DM Sans', sans-serif; /* Schriftart für den Text */
-    font-size: 1.2em; /* Schriftgröße für den Text */
-    color: #F5F5DC; /* Farbe für den Text: Weizenfarbe */
-    margin-top: 20px; /* Abstand nach oben */
+    font-size: 1.2em; /* Größe für den Text */
+    color: #F5DEB3; /* Weizenfarbe für den Text */
+    margin-top: 10px; /* Abstand nach oben */
+    text-align: center; /* Zentrierung des Textes */
 }
 
-/* Medienabfragen für kleinere Bildschirme */
+/* Container für zentrierten Inhalt */
+.container {
+    width: 100%; /* Volle Breite */
+    padding: 0; /* Kein Innenabstand */
+    background: transparent; /* Kein Hintergrund */
+}
+
+/* Medienabfragen für mobile Geräte */
 @media (max-width: 768px) {
     .anton-sc {
-        font-size: 2.5em; /* Kleinere Schriftgröße für kleinere Bildschirme */
+        font-size: 2.5em; /* Kleinere Schriftgröße für die Überschrift auf Mobilgeräten */
     }
-
     .dm-sans {
-        font-size: 1em; /* Kleinere Schriftgröße für kleinere Bildschirme */
-    }
-
-    .container {
-        padding: 10px; /* Weniger Padding im Container für kleinere Bildschirme */
-        top: 20%; /* 20% vom oberen Rand des Viewports für kleinere Bildschirme */
+        font-size: 1em; /* Kleinere Schriftgröße für den Text auf Mobilgeräten */
     }
 }
 
@@ -63,13 +53,8 @@ body {
     .anton-sc {
         font-size: 2em; /* Noch kleinere Schriftgröße für sehr kleine Bildschirme */
     }
-
     .dm-sans {
-        font-size: 0.9em; /* Noch kleinere Schriftgröße für sehr kleine Bildschirme */
-    }
-
-    .container {
-        padding: 5px; /* Minimales Padding im Container für sehr kleine Bildschirme */
-        top: 25%; /* 25% vom oberen Rand des Viewports für sehr kleine Bildschirme */
+        font-size: 0.9em; /* Kleinere Schriftgröße für sehr kleine Bildschirme */
     }
 }
+
