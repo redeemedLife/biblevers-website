@@ -5,11 +5,11 @@ body {
     background-size: cover; /* Hintergrundbild vollständig abdecken */
     background-position: center; /* Bild zentrieren */
     background-repeat: no-repeat; /* Bild nicht wiederholen */
-    color: #333; /* Textfarbe */
-    text-align: center; /* Zentriert den Text */
+    color: #333; /* Standard-Textfarbe */
+    text-align: center; /* Text zentrieren */
     margin: 0; /* Kein Margin */
     padding: 0; /* Kein Padding */
-    height: 100vh; /* Höhe des Viewports, um sicherzustellen, dass der Hintergrundbild den gesamten Bildschirm abdeckt */
+    height: 100vh; /* Höhe des Viewports, um sicherzustellen, dass das Hintergrundbild den gesamten Bildschirm abdeckt */
     overflow: hidden; /* Verhindert das Scrollen auf der Seite */
 }
 
@@ -29,8 +29,8 @@ body {
 /* Stile für die Überschrift */
 .anton-sc {
     font-family: 'Anton SC', sans-serif; /* Schriftart für die Überschrift */
-    font-size: 3em; /* Größe der Überschrift */
-    color: #F5F5DC; /* Farbe für die Überschrift: Cream */
+    font-size: 2.5em; /* Verkleinerte Größe der Überschrift */
+    color: #3B5323; /* Farbe für die Überschrift: Mocha/Jägergrün */
     margin-bottom: 20px; /* Abstand nach unten */
 }
 
@@ -38,14 +38,14 @@ body {
 .dm-sans {
     font-family: 'DM Sans', sans-serif; /* Schriftart für den Text */
     font-size: 1.5em; /* Größere Schriftgröße für den Text */
-    color: #F5F5DC; /* Farbe für den Text: Cream */
+    color: #D2B48C; /* Textfarbe: Dunkles Creme (Dark Cream) */
     margin-top: 20px; /* Abstand nach oben */
 }
 
 /* Responsive Design Anpassungen */
 @media (max-width: 768px) {
     .anton-sc {
-        font-size: 2.5em; /* Kleinere Schriftgröße auf kleineren Bildschirmen */
+        font-size: 2em; /* Kleinere Schriftgröße auf kleineren Bildschirmen */
     }
 
     .dm-sans {
@@ -61,7 +61,7 @@ body {
 
 @media (max-width: 480px) {
     .anton-sc {
-        font-size: 2em; /* Noch kleinere Schriftgröße auf sehr kleinen Bildschirmen */
+        font-size: 1.75em; /* Noch kleinere Schriftgröße auf sehr kleinen Bildschirmen */
     }
 
     .dm-sans {
@@ -74,5 +74,3 @@ body {
         top: 30%; /* Container weiter nach oben verschieben */
     }
 }
-
-
