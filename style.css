@@ -5,7 +5,7 @@ body {
     background-size: cover; /* Hintergrundbild vollständig abdecken */
     background-position: center center; /* Bild zentrieren */
     background-repeat: no-repeat; /* Bild nicht wiederholen */
-    color: #333; /* Textfarbe */
+    color: #333; /* Standard Textfarbe */
     margin: 0; /* Kein Margin */
     min-height: 100vh; /* Minimale Höhe auf 100% des Viewports setzen */
     padding: 0; /* Kein Padding auf dem Body */
@@ -19,8 +19,8 @@ body {
     max-width: 600px; /* Maximale Breite des Containers */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
-    background: none; /* Kein Hintergrund für den Container */
-    box-shadow: none; /* Kein Schatten für den Container */
+    background: rgba(255, 255, 255, 0.8); /* Weißer Hintergrund mit Transparenz */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten für den Container */
     text-align: center; /* Zentriert den Text innerhalb des Containers */
 }
 
@@ -28,7 +28,7 @@ body {
 .anton-sc {
     font-family: 'Anton SC', sans-serif; /* Schriftart für die Überschrift */
     font-size: 3em; /* Erhöhte Größe der Überschrift */
-    color: #3B5323; /* Farbe für die Überschrift: Mocha Green */
+    color: #F5F5DC; /* Farbe für die Überschrift: Creme */
     margin-bottom: 20px; /* Abstand nach unten */
 }
 
@@ -36,7 +36,7 @@ body {
 .dm-sans {
     font-family: 'DM Sans', sans-serif; /* Schriftart für den Text */
     font-size: 1.2em; /* Schriftgröße für den Text */
-    color: #333; /* Textfarbe */
+    color: #FFFFFF; /* Farbe für den Text: Weiß */
     margin-top: 20px; /* Abstand nach oben */
 }
 
