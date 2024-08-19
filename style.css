@@ -18,7 +18,7 @@ body {
     padding: 20px; /* Innenabstand */
     margin-top: 150px; /* Abstand von oben erhöhen, um den Container weiter nach unten zu verschieben */
     border-radius: 10px; /* Abgerundete Ecken */
-    /* Kein Hintergrund, um den weißen Kasten zu entfernen */
+    background: none; /* Kein Hintergrund für den Container */
 }
 
 /* Stile für die Überschrift */
@@ -49,7 +49,7 @@ body {
 
     .container {
         padding: 15px; /* Weniger Innenabstand auf kleineren Bildschirmen */
-        margin-top: 100px; /* Weniger Abstand von oben auf kleineren Bildschirmen */
+        margin-top: 120px; /* Weniger Abstand von oben auf kleineren Bildschirmen */
     }
 }
 
@@ -64,7 +64,8 @@ body {
 
     .container {
         padding: 10px; /* Weniger Innenabstand auf sehr kleinen Bildschirmen */
-        margin-top: 70px; /* Weniger Abstand von oben auf sehr kleinen Bildschirmen */
+        margin-top: 90px; /* Weniger Abstand von oben auf sehr kleinen Bildschirmen */
     }
 }
+
 
