@@ -13,9 +13,9 @@ body {
 /* Container für zentrierten Inhalt */
 .container {
     position: absolute;
-    top: 30%; /* Startposition bei 30% des Viewports von oben */
+    top: 35%; /* Startposition bei 35% des Viewports von oben */
     left: 50%; /* Zentrieren des Containers horizontal */
-    transform: translate(-50%, -30%); /* Vertikale Verschiebung nach oben und horizontale Zentrierung */
+    transform: translate(-50%, -35%); /* Vertikale Verschiebung nach oben und horizontale Zentrierung */
     max-width: 600px; /* Maximale Breite des Containers */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
@@ -59,8 +59,8 @@ body {
 @media (max-width: 768px) {
     .container {
         width: 90%; /* Container auf 90% der Breite des Viewports setzen */
-        top: 35%; /* Container weiter nach unten verschieben */
-        transform: translate(-50%, -35%); /* Anpassung der Vertikalposition */
+        top: 40%; /* Container weiter nach unten verschieben */
+        transform: translate(-50%, -40%); /* Anpassung der Vertikalposition */
         padding: 15px; /* Weniger Padding auf kleinen Bildschirmen */
     }
 
@@ -76,8 +76,8 @@ body {
 @media (max-width: 480px) {
     .container {
         width: 95%; /* Container auf 95% der Breite des Viewports setzen */
-        top: 40%; /* Container weiter nach unten verschieben */
-        transform: translate(-50%, -40%); /* Weitere Anpassung der Vertikalposition */
+        top: 45%; /* Container weiter nach unten verschieben */
+        transform: translate(-50%, -45%); /* Weitere Anpassung der Vertikalposition */
         padding: 10px; /* Noch weniger Padding auf sehr kleinen Bildschirmen */
     }
 
