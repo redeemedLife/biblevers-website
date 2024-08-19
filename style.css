@@ -13,15 +13,28 @@ body {
 /* Container für zentrierten Inhalt */
 .container {
     position: absolute;
-    top: 20%; /* Startposition bei 20% des Viewports von oben */
+    top: 30%; /* Startposition bei 30% des Viewports von oben */
     left: 50%; /* Zentrieren des Containers horizontal */
-    transform: translate(-50%, -20%); /* Vertikale Verschiebung nach oben und horizontale Zentrierung */
+    transform: translate(-50%, -30%); /* Vertikale Verschiebung nach oben und horizontale Zentrierung */
     max-width: 600px; /* Maximale Breite des Containers */
-    background: rgba(255, 255, 255, 0.8); /* Stärkerer weißer Hintergrund mit Transparenz */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
-    box-shadow: 0 0 15px rgba(148, 119, 76, 0.7); /* Sanfte Verblendung am Rand des Containers */
+    text-align: center; /* Zentriert den Text innerhalb des Containers */
+    background: transparent; /* Hintergrund des Containers auf transparent setzen */
     position: relative; /* Für das ::before Pseudoelement */
+}
+
+/* Hintergrund-Gradient hinter dem Text */
+.container::before {
+    content: '';
+    position: absolute;
+    top: -20%; /* Gradient beginnt 20% oberhalb des Containers */
+    left: 0;
+    width: 100%;
+    height: 140%; /* Deckt den gesamten Container mit etwas zusätzlichen Platz ab */
+    background: radial-gradient(circle, rgba(148, 119, 76, 0.7) 0%, rgba(148, 119, 76, 0) 80%);
+    z-index: -1; /* Hintergrund-Gradient hinter dem Container */
+    border-radius: 10px; /* Abgerundete Ecken für den Hintergrund-Gradient */
 }
 
 /* Stile für die Überschrift */
@@ -42,25 +55,12 @@ body {
     text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.7); /* Leichte Schattierung für bessere Lesbarkeit */
 }
 
-/* Hintergrund-Gradient hinter dem Text */
-.container::before {
-    content: '';
-    position: absolute;
-    top: -20%; /* Starten etwas höher als der Container */
-    left: 0;
-    width: 100%;
-    height: 140%; /* Deckt den gesamten Container und etwas mehr ab */
-    background: radial-gradient(circle, rgba(148, 119, 76, 0.8) 0%, rgba(148, 119, 76, 0) 70%);
-    z-index: -1; /* Hintergrund-Gradient hinter dem Container */
-    border-radius: 10px; /* Abgerundete Ecken für den Hintergrund-Gradient */
-}
-
 /* Responsive Design für kleine Bildschirme */
 @media (max-width: 768px) {
     .container {
         width: 90%; /* Container auf 90% der Breite des Viewports setzen */
-        top: 30%; /* Container weiter nach unten verschieben */
-        transform: translate(-50%, -30%); /* Anpassung der Vertikalposition */
+        top: 35%; /* Container weiter nach unten verschieben */
+        transform: translate(-50%, -35%); /* Anpassung der Vertikalposition */
         padding: 15px; /* Weniger Padding auf kleinen Bildschirmen */
     }
 
