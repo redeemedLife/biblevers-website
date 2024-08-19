@@ -19,7 +19,7 @@ body {
     top: 35%; /* Positionierung von oben */
     left: 50%; /* Zentriert von der linken Seite */
     transform: translate(-50%, -35%); /* Zentriert den Container */
-    background: rgba(148, 119, 76, 0.6); /* Hintergrundfarbe mit Transparenz (#94774C) */
+    background: linear-gradient(to bottom, rgba(148, 119, 76, 0.8), rgba(148, 119, 76, 0)); /* Verlauf für besseren Kontrast */
     border-radius: 10px; /* Abgerundete Ecken */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Schatten für besseren Kontrast */
 }
@@ -38,7 +38,7 @@ body {
     font-family: 'DM Sans', sans-serif; /* Schriftart für den Text */
     font-size: 1.5em; /* Schriftgröße für den Text */
     color: #FFFFFF; /* Textfarbe: Weiß */
-    background: rgba(255, 255, 255, 0.4); /* Hintergrundfarbe des Textes leicht transparent */
+    background: rgba(255, 255, 255, 0.6); /* Hintergrundfarbe des Textes leicht transparent */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Schatten für besseren Kontrast */
