@@ -30,17 +30,45 @@ body {
 .anton-sc {
     font-family: 'Anton SC', sans-serif; /* Schriftart für die Überschrift */
     font-size: 2.5em; /* Größe der Überschrift */
-    color: #47421F; /* Farbe für die Überschrift: Cream */
+    color: #F5F5DC; /* Farbe für die Überschrift: Cream */
     white-space: nowrap; /* Verhindert, dass der Text auf mehrere Zeilen umbricht */
     margin-bottom: 20px; /* Abstand nach unten */
+    position: relative; /* Position für z-index Steuerung */
+}
+
+.anton-sc::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 224, 0.7), rgba(255, 255, 224, 0) 70%);
+    z-index: -1;
+    border-radius: 50%;
 }
 
 /* Stile für den Text unter der Überschrift */
 .dm-sans {
     font-family: 'DM Sans', sans-serif; /* Schriftart für den Text */
     font-size: 1.5em; /* Größere Schriftgröße für den Text */
-    color: #94774C; /* Etwas dunklere Farbe für den Text */
+    color: #E8E4C9; /* Etwas dunklere Farbe für den Text */
     margin-top: 20px; /* Abstand nach oben */
+    position: relative; /* Position für z-index Steuerung */
+}
+
+.dm-sans::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, rgba(255, 255, 224, 0.5), rgba(255, 255, 224, 0) 70%);
+    z-index: -1;
+    border-radius: 50%;
 }
 
 /* Responsive Design Anpassungen */
