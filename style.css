@@ -3,12 +3,13 @@ body {
     font-family: 'DM Sans', sans-serif; /* Standard-Schriftart für den Body-Text */
     background-image: url('https://github.com/redeemedLife/biblevers-website/raw/main/9093FDF6-BEF1-4D16-8D52-03DE53BC5351%20(4).jpg'); /* Pfad zum Hintergrundbild */
     background-size: cover; /* Hintergrundbild vollständig abdecken */
-    background-position: center; /* Bild zentrieren */
+    background-position: center center; /* Bild zentrieren */
     background-repeat: no-repeat; /* Bild nicht wiederholen */
     color: #333; /* Textfarbe */
     text-align: center; /* Zentriert den Text */
-    padding: 20px; /* Abstand vom Rand */
     margin: 0; /* Kein Margin */
+    min-height: 100vh; /* Minimale Höhe auf 100% des Viewports setzen */
+    padding: 0; /* Kein Padding auf dem Body */
 }
 
 /* Container für zentrierten Inhalt */
@@ -17,7 +18,7 @@ body {
     margin: 0 auto; /* Zentriert den Container horizontal */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
-    background: rgba(255, 255, 255, 0.8); /* Weißer Hintergrund mit Transparenz */
+    background: transparent; /* Kein Hintergrund */
 }
 
 /* Stile für die Überschrift */
@@ -46,10 +47,6 @@ body {
         font-size: 1em; /* Kleinere Schriftgröße für kleinere Bildschirme */
     }
 
-    body {
-        padding: 10px; /* Weniger Padding für kleinere Bildschirme */
-    }
-
     .container {
         padding: 10px; /* Weniger Padding im Container für kleinere Bildschirme */
     }
@@ -62,10 +59,6 @@ body {
 
     .dm-sans {
         font-size: 0.9em; /* Noch kleinere Schriftgröße für sehr kleine Bildschirme */
-    }
-
-    body {
-        padding: 5px; /* Minimales Padding für sehr kleine Bildschirme */
     }
 
     .container {
