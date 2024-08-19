@@ -19,8 +19,8 @@ body {
     max-width: 600px; /* Maximale Breite des Containers */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
-    background: rgba(255, 255, 255, 0.8); /* Weißer Hintergrund mit Transparenz */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten für den Container */
+    background: none; /* Kein Hintergrund für den Container */
+    box-shadow: none; /* Kein Schatten für den Container */
     text-align: center; /* Zentriert den Text innerhalb des Containers */
 }
 
