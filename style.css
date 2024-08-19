@@ -9,6 +9,8 @@ body {
     text-align: center; /* Zentriert den Text */
     margin: 0; /* Kein Margin */
     padding: 0; /* Kein Padding */
+    height: 100vh; /* Höhe des Viewports, um sicherzustellen, dass der Hintergrundbild den gesamten Bildschirm abdeckt */
+    overflow: hidden; /* Verhindert das Scrollen auf der Seite */
 }
 
 /* Container für zentrierten Inhalt */
@@ -16,9 +18,12 @@ body {
     max-width: 600px; /* Maximale Breite des Containers */
     margin: 0 auto; /* Zentriert den Container horizontal */
     padding: 20px; /* Innenabstand */
-    margin-top: 150px; /* Abstand von oben erhöhen, um den Container weiter nach unten zu verschieben */
     border-radius: 10px; /* Abgerundete Ecken */
     background: none; /* Kein Hintergrund für den Container */
+    position: absolute; /* Positionierung, um die Platzierung des Containers zu steuern */
+    top: 50%; /* Positioniert den Container in der Mitte des Viewports */
+    left: 50%; /* Positioniert den Container in der Mitte des Viewports */
+    transform: translate(-50%, -50%); /* Verschiebt den Container um die Hälfte seiner Breite und Höhe, um ihn genau zu zentrieren */
 }
 
 /* Stile für die Überschrift */
@@ -49,7 +54,8 @@ body {
 
     .container {
         padding: 15px; /* Weniger Innenabstand auf kleineren Bildschirmen */
-        margin-top: 120px; /* Weniger Abstand von oben auf kleineren Bildschirmen */
+        margin-top: 0; /* Kein zusätzlicher Abstand oben auf kleineren Bildschirmen */
+        top: 40%; /* Container etwas höher verschieben */
     }
 }
 
@@ -64,7 +70,8 @@ body {
 
     .container {
         padding: 10px; /* Weniger Innenabstand auf sehr kleinen Bildschirmen */
-        margin-top: 90px; /* Weniger Abstand von oben auf sehr kleinen Bildschirmen */
+        margin-top: 0; /* Kein zusätzlicher Abstand oben auf sehr kleinen Bildschirmen */
+        top: 30%; /* Container weiter nach oben verschieben */
     }
 }
 
