@@ -1,25 +1,27 @@
 /* Allgemeine Stile für die gesamte Seite */
 body {
     font-family: 'DM Sans', sans-serif; /* Standard-Schriftart für den Body-Text */
-    background-image: url('https://github.com/redeemedLife/biblevers-website/blob/main/_70248f89-e0c0-4e28-a6d0-c28bd936e807.jpeg?raw=true'); /* Pfad zum Hintergrundbild */
+    background-image: url('https://github.com/redeemedLife/biblevers-website/raw/main/_70248f89-e0c0-4e28-a6d0-c28bd936e807.jpeg'); /* Pfad zum Hintergrundbild */
     background-size: cover; /* Hintergrundbild vollständig abdecken */
     background-position: center center; /* Bild zentrieren */
     background-repeat: no-repeat; /* Bild nicht wiederholen */
     color: #333; /* Textfarbe */
-    text-align: center; /* Zentriert den Text */
     margin: 0; /* Kein Margin */
     min-height: 100vh; /* Minimale Höhe auf 100% des Viewports setzen */
     padding: 0; /* Kein Padding auf dem Body */
+    display: flex; /* Flexbox aktivieren */
+    justify-content: center; /* Horizontale Zentrierung */
+    align-items: center; /* Vertikale Zentrierung */
 }
 
 /* Container für zentrierten Inhalt */
 .container {
     max-width: 600px; /* Maximale Breite des Containers */
-    margin: 0 auto; /* Zentriert den Container horizontal */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
     background: none; /* Kein Hintergrund für den Container */
     box-shadow: none; /* Kein Schatten für den Container */
+    text-align: center; /* Zentriert den Text innerhalb des Containers */
 }
 
 /* Stile für die Überschrift */
