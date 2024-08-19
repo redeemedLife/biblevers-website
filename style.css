@@ -5,7 +5,7 @@ body {
     background-size: cover; /* Bildgröße anpassen, um den gesamten Hintergrund zu bedecken */
     background-repeat: no-repeat; /* Verhindert das Wiederholen des Bildes */
     background-attachment: fixed; /* Bild bleibt fixiert beim Scrollen */
-    color: #333; /* Textfarbe */
+    color: #fff; /* Textfarbe */
     text-align: center; /* Zentriert den Text */
     padding: 50px; /* Abstand vom Rand */
     margin: 0; /* Kein Margin */
@@ -22,14 +22,14 @@ body {
 .anton-sc {
     font-family: 'Anton SC', sans-serif; /* Schriftart für die Überschrift */
     font-size: 4em; /* Erhöhte Größe der Überschrift */
-    color: #3B5323; /* Farbe für die Überschrift: Mocha Green */
+    color: #fff; /* Farbe für die Überschrift: Mocha Green */
     margin-bottom: 40px; /* Abstand nach unten */
 }
 
 /* Stile für den Text unter der Überschrift */
 .dm-sans {
     font-family: 'DM Sans', sans-serif; /* Schriftart für den Text */
-    font-size: 1.2em; /* Schriftgröße für den Text */
-    color: #333; /* Textfarbe */
+    font-size: 3em; /* Schriftgröße für den Text */
+    color: #fff; /* Textfarbe */
     margin-top: 20px; /* Abstand nach oben */
 }
