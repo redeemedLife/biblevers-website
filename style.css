@@ -30,8 +30,9 @@ body {
 .anton-sc {
     font-family: 'Anton SC', sans-serif; /* Schriftart für die Überschrift */
     font-size: 2.5em; /* Größe der Überschrift */
-    color: #94774C; /* Farbe für die Überschrift: Cream */
-    white-space: nowrap; /* Verhindert, dass der Text auf mehrere Zeilen umbricht */
+    background: linear-gradient(45deg, #F5F5DC, #FFFFFF); /* Farbverlauf von Cream zu Weiß */
+    -webkit-background-clip: text; /* Hintergrund nur für den Text anwenden */
+    -webkit-text-fill-color: transparent; /* Textfarbe transparent machen, damit der Verlauf sichtbar wird */
     margin-bottom: 10px; /* Abstand nach unten */
     position: relative; /* Position für z-index Steuerung */
     z-index: 1; /* Setzt die Überschrift über den Verlauf */
