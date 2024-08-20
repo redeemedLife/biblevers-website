@@ -22,9 +22,9 @@ body {
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
     text-align: center; /* Zentriert den Text */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten für besseren Kontrast */
     position: relative; /* Positionierung relativ für den Hintergrundverlauf */
     z-index: 1; /* Sicherstellen, dass der Container über dem Hintergrundverlauf liegt */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sanfter Schatten für besseren Übergang */
 }
 
 /* Stile für die Überschrift */
@@ -46,12 +46,13 @@ body {
 .container::before {
     content: ""; /* Leeres Element */
     position: absolute; /* Absolute Positionierung */
-    top: -30%; /* Hintergrundverlauf beginnt weiter oben als der Container */
-    left: -10%; /* Hintergrundverlauf beginnt weiter links als der Container */
-    width: 120%; /* Breitere Fläche für den Hintergrundverlauf */
-    height: 150%; /* Höhere Fläche für den Hintergrundverlauf */
-    background: radial-gradient(circle, rgba(148, 119, 76, 0.7) 0%, rgba(148, 119, 76, 0) 70%); /* Verlauf von oben nach unten */
+    top: -50%; /* Hintergrundverlauf beginnt weiter oben als der Container */
+    left: -20%; /* Hintergrundverlauf beginnt weiter links als der Container */
+    width: 140%; /* Breitere Fläche für den Hintergrundverlauf */
+    height: 140%; /* Höhere Fläche für den Hintergrundverlauf */
+    background: radial-gradient(circle, rgba(148, 119, 76, 0.8) 0%, rgba(148, 119, 76, 0) 60%); /* Verlauf von oben nach unten */
     z-index: -1; /* Hintergrund hinter dem Text */
+    border-radius: 10px; /* Gleiche abgerundete Ecken wie der Container */
 }
 
 /* Für Bildschirme bis 768px Breite (Tablets und kleinere Laptops) */
