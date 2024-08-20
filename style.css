@@ -31,11 +31,23 @@ body {
     justify-content: flex-start; /* Text am oberen Rand des Containers ausrichten */
 }
 
+/* Brush-Streifen hinter der Überschrift und dem Text */
+.container::before {
+    content: ""; /* Leeres Element */
+    position: absolute; /* Absolute Positionierung */
+    top: 0; /* Streifen am oberen Rand des Containers beginnen */
+    left: 0; /* Streifen am linken Rand des Containers beginnen */
+    width: 100%; /* Volle Breite des Containers */
+    height: 100%; /* Volle Höhe des Containers */
+    background: linear-gradient(to bottom, rgba(148, 119, 76, 0.7) 0%, rgba(148, 119, 76, 0) 100%); /* Verlauf von oben nach unten */
+    z-index: -1; /* Hintergrund hinter dem Text */
+}
+
 /* Stile für die Überschrift */
 .anton-sc {
     font-family: 'Anton SC', sans-serif; /* Schriftart für die Überschrift */
     font-size: 2.5em; /* Größe der Überschrift */
-    color: #FF69B4; /* Knallpink für die Überschrift */
+    color: #F5F5DC; /* Farbe für die Überschrift: Cream */
     margin-bottom: 20px; /* Abstand nach unten */
 }
 
@@ -79,5 +91,3 @@ body {
         font-size: 1em; /* Weitere Verkleinerung der Schriftgröße für den Text */
     }
 }
-
-
