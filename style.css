@@ -18,13 +18,17 @@ body {
 /* Container für zentrierten Inhalt */
 .container {
     max-width: 90%; /* Maximale Breite des Containers */
-    background: rgba(255, 255, 255, 0.5); /* Weißer Hintergrund mit Transparenz */
+    background: transparent; /* Hintergrund auf transparent setzen */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
     text-align: center; /* Zentriert den Text */
     position: relative; /* Positionierung relativ für den Hintergrundverlauf */
     z-index: 1; /* Sicherstellen, dass der Container über dem Hintergrundverlauf liegt */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sanfter Schatten für besseren Übergang */
+    display: flex; /* Flexbox für die Textausrichtung */
+    flex-direction: column; /* Text und Container in Spalten anordnen */
+    align-items: center; /* Horizontale Zentrierung des Inhalts */
+    justify-content: flex-start; /* Text am oberen Rand des Containers ausrichten */
 }
 
 /* Stile für die Überschrift */
