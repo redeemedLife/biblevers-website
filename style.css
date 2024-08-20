@@ -18,7 +18,7 @@ body {
 /* Container für zentrierten Inhalt */
 .container {
     max-width: 90%; /* Maximale Breite des Containers */
-    background: rgba(255, 255, 255, 0.7); /* Weißer Hintergrund mit Transparenz */
+    background: transparent; /* Hintergrund auf transparent setzen */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
     text-align: center; /* Zentriert den Text */
@@ -46,10 +46,10 @@ body {
 .container::before {
     content: ""; /* Leeres Element */
     position: absolute; /* Absolute Positionierung */
-    top: -20%; /* Hintergrundverlauf beginnt oberhalb des Containers */
-    left: 0; /* Links am Container */
-    width: 100%; /* Volle Breite */
-    height: 120%; /* Volle Höhe + zusätzlicher Raum für den Verlauf */
+    top: -30%; /* Hintergrundverlauf beginnt weiter oben als der Container */
+    left: -10%; /* Hintergrundverlauf beginnt weiter links als der Container */
+    width: 120%; /* Breitere Fläche für den Hintergrundverlauf */
+    height: 150%; /* Höhere Fläche für den Hintergrundverlauf */
     background: radial-gradient(circle, rgba(148, 119, 76, 0.7) 0%, rgba(148, 119, 76, 0) 70%); /* Verlauf von oben nach unten */
     z-index: -1; /* Hintergrund hinter dem Text */
 }
@@ -87,4 +87,3 @@ body {
         font-size: 1em; /* Weitere Verkleinerung der Schriftgröße für den Text */
     }
 }
-
