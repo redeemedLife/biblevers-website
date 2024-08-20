@@ -20,23 +20,22 @@ body {
     max-width: 90%; /* Maximale Breite des Containers */
     background: transparent; /* Hintergrund auf transparent setzen */
     padding: 20px; /* Innenabstand */
-    border-radius: 10px; /* Abgerundete Ecken */
+    border-radius: 0; /* Keine abgerundeten Ecken */
     text-align: center; /* Zentriert den Text */
     position: relative; /* Positionierung relativ für den Hintergrundverlauf */
-    z-index: 1; /* Sicherstellen, dass der Container über dem Hintergrundverlauf liegt */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sanfter Schatten für besseren Übergang */
+    z-index: 1; /* Sicherstellen, dass der Container über dem Hintergrund liegt */
+    box-shadow: none; /* Keine Schatten */
     display: flex; /* Flexbox für die Textausrichtung */
     flex-direction: column; /* Text und Container in Spalten anordnen */
     align-items: center; /* Horizontale Zentrierung des Inhalts */
     justify-content: flex-start; /* Text am oberen Rand des Containers ausrichten */
-    margin-top: 20px; /* Abstand vom oberen Rand des Viewports */
 }
 
 /* Stile für die Überschrift */
 .anton-sc {
     font-family: 'Anton SC', sans-serif; /* Schriftart für die Überschrift */
     font-size: 2.5em; /* Größe der Überschrift */
-    color: #F5F5DC; /* Farbe für die Überschrift: Cream */
+    color: #FF69B4; /* Knallpink für die Überschrift */
     margin-bottom: 20px; /* Abstand nach unten */
 }
 
