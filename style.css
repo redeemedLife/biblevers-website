@@ -18,7 +18,7 @@ body {
 /* Container für zentrierten Inhalt */
 .container {
     max-width: 90%; /* Maximale Breite des Containers */
-    background: transparent; /* Hintergrund auf transparent setzen */
+    background: rgba(255, 255, 255, 0.5); /* Weißer Hintergrund mit Transparenz */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
     text-align: center; /* Zentriert den Text */
@@ -46,7 +46,7 @@ body {
 .container::before {
     content: ""; /* Leeres Element */
     position: absolute; /* Absolute Positionierung */
-    top: -50%; /* Hintergrundverlauf beginnt weiter oben als der Container */
+    top: -30%; /* Hintergrundverlauf beginnt weiter oben als der Container */
     left: -20%; /* Hintergrundverlauf beginnt weiter links als der Container */
     width: 140%; /* Breitere Fläche für den Hintergrundverlauf */
     height: 140%; /* Höhere Fläche für den Hintergrundverlauf */
