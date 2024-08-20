@@ -42,7 +42,7 @@ body {
     left: 0; /* Streifen am linken Rand des Containers beginnen */
     width: 100%; /* Volle Breite des Containers */
     height: 100%; /* Volle Höhe des Containers */
-    background: linear-gradient(to bottom, rgba(148, 119, 76, 0.7) 0%, rgba(148, 119, 76, 0) 100%); /* Verlauf von oben nach unten */
+    background: linear-gradient(to bottom, rgba(148, 119, 76, 0.9) 0%, rgba(148, 119, 76, 0.6) 70%, rgba(148, 119, 76, 0) 100%); /* Verbesserter Verlauf von oben nach unten */
     z-index: -1; /* Hintergrund hinter dem Text */
 }
 
