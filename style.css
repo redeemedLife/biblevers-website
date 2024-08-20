@@ -34,7 +34,7 @@ body {
     justify-content: flex-start; /* Text am oberen Rand des Containers ausrichten */
 }
 
-/* Dunklerer und gleichmäßigerer Verlauf hinter der Überschrift und dem Text */
+/* Dunklerer Cream-Braun-Mocha Verlauf hinter der Überschrift und dem Text */
 .container::before {
     content: ""; /* Leeres Element */
     position: absolute; /* Absolute Positionierung */
@@ -42,7 +42,7 @@ body {
     left: 0; /* Streifen am linken Rand des Containers beginnen */
     width: 100%; /* Volle Breite des Containers */
     height: 100%; /* Volle Höhe des Containers */
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 0) 100%); /* Dunklerer und gleichmäßigerer Verlauf */
+    background: radial-gradient(circle, rgba(148, 119, 76, 0.9) 0%, rgba(148, 119, 76, 0.7) 50%, rgba(148, 119, 76, 0.4) 70%, rgba(148, 119, 76, 0) 100%); /* Cream-Braun-Mocha Verlauf */
     z-index: -1; /* Hintergrund hinter dem Text */
 }
 
