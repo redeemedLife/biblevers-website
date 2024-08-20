@@ -5,30 +5,32 @@ body {
     background-size: cover; /* Hintergrundbild vollständig abdecken */
     background-position: center; /* Bild zentrieren */
     background-repeat: no-repeat; /* Bild nicht wiederholen */
+    background-attachment: fixed; /* Hintergrundbild fixieren, damit es beim Scrollen nicht verschoben wird */
     color: #333; /* Textfarbe */
     margin: 0; /* Kein Margin */
     padding: 0; /* Kein Padding */
+    height: 100vh; /* Vollständige Höhe des Viewports */
+    display: flex; /* Flexbox für zentrierten Inhalt */
+    align-items: center; /* Vertikale Zentrierung des Inhalts */
+    justify-content: center; /* Horizontale Zentrierung des Inhalts */
 }
 
 /* Container für zentrierten Inhalt */
 .container {
-    position: absolute; /* Positionierung relativ zum Bildschirm */
-    top: 35%; /* Position von oben (35% des Viewports) */
-    left: 50%; /* Position von links (50% des Viewports) */
-    transform: translate(-50%, -50%); /* Zentriert den Container */
     max-width: 90%; /* Maximale Breite des Containers */
-    background: rgba(148, 119, 76, 0.7); /* Hintergrundfarbe mit Transparenz für bessere Lesbarkeit */
-    border-radius: 10px; /* Abgerundete Ecken */
+    background: rgba(255, 255, 255, 0.7); /* Weißer Hintergrund mit Transparenz */
     padding: 20px; /* Innenabstand */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Schatten für besseren Kontrast */
+    border-radius: 10px; /* Abgerundete Ecken */
     text-align: center; /* Zentriert den Text */
-    background: linear-gradient(to bottom, rgba(148, 119, 76, 0.7), rgba(148, 119, 76, 0) 70%); /* Verlauf für besseren Kontrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten für besseren Kontrast */
+    position: relative; /* Positionierung relativ für den Hintergrundverlauf */
+    z-index: 1; /* Sicherstellen, dass der Container über dem Hintergrundverlauf liegt */
 }
 
 /* Stile für die Überschrift */
 .anton-sc {
     font-family: 'Anton SC', sans-serif; /* Schriftart für die Überschrift */
-    font-size: 3em; /* Erhöhte Größe der Überschrift */
+    font-size: 2.5em; /* Größe der Überschrift */
     color: #F5F5DC; /* Farbe für die Überschrift: Cream */
     margin-bottom: 20px; /* Abstand nach unten */
 }
@@ -37,21 +39,52 @@ body {
 .dm-sans {
     font-family: 'DM Sans', sans-serif; /* Schriftart für den Text */
     font-size: 1.5em; /* Schriftgröße für den Text */
-    color: #FFFFFF; /* Textfarbe für den Vers */
-    margin-top: 20px; /* Abstand nach oben */
+    color: #FFFFFF; /* Farbe für den Text: Weiß */
 }
 
-/* Responsive Design */
+/* Hintergrundverlauf für besseren Textkontrast */
+.container::before {
+    content: ""; /* Leeres Element */
+    position: absolute; /* Absolute Positionierung */
+    top: -20%; /* Hintergrundverlauf beginnt oberhalb des Containers */
+    left: 0; /* Links am Container */
+    width: 100%; /* Volle Breite */
+    height: 120%; /* Volle Höhe + zusätzlicher Raum für den Verlauf */
+    background: radial-gradient(circle, rgba(148, 119, 76, 0.7) 0%, rgba(148, 119, 76, 0) 70%); /* Verlauf von oben nach unten */
+    z-index: -1; /* Hintergrund hinter dem Text */
+}
+
+/* Für Bildschirme bis 768px Breite (Tablets und kleinere Laptops) */
 @media (max-width: 768px) {
     .container {
-        width: 90%; /* Maximale Breite für kleinere Bildschirme */
-        padding: 10px; /* Innenabstand für kleinere Bildschirme */
-        top: 30%; /* Position von oben anpassen */
+        width: 90%; /* Container auf 90% der Breite des Viewports setzen */
+        padding: 15px; /* Weniger Padding auf kleinen Bildschirmen */
+        top: 25%; /* Container höher positionieren */
     }
+
     .anton-sc {
-        font-size: 2.5em; /* Kleinere Schriftgröße für kleinere Bildschirme */
+        font-size: 2em; /* Kleinere Schriftgröße für die Überschrift */
     }
+
     .dm-sans {
-        font-size: 1.2em; /* Kleinere Schriftgröße für kleinere Bildschirme */
+        font-size: 1.2em; /* Kleinere Schriftgröße für den Text */
     }
 }
+
+/* Für Bildschirme bis 480px Breite (Smartphones im Hochformat) */
+@media (max-width: 480px) {
+    .container {
+        width: 95%; /* Container auf 95% der Breite des Viewports setzen */
+        padding: 10px; /* Noch weniger Padding auf sehr kleinen Bildschirmen */
+        top: 20%; /* Container höher positionieren */
+    }
+
+    .anton-sc {
+        font-size: 1.5em; /* Weitere Verkleinerung der Schriftgröße für die Überschrift */
+    }
+
+    .dm-sans {
+        font-size: 1em; /* Weitere Verkleinerung der Schriftgröße für den Text */
+    }
+}
+
