@@ -22,7 +22,10 @@ body {
     padding: 20px; /* Innenabstand */
     border-radius: 0; /* Keine abgerundeten Ecken */
     text-align: center; /* Zentriert den Text */
-    position: relative; /* Positionierung relativ für den Hintergrundverlauf */
+    position: absolute; /* Absolute Positionierung für exakte Platzierung */
+    top: 40%; /* Positioniere den Container 40% vom oberen Rand des Viewports */
+    left: 50%; /* Zentriere den Container horizontal */
+    transform: translateX(-50%); /* Korrigiere die horizontale Zentrierung */
     z-index: 1; /* Sicherstellen, dass der Container über dem Hintergrund liegt */
     box-shadow: none; /* Keine Schatten */
     display: flex; /* Flexbox für die Textausrichtung */
@@ -63,7 +66,7 @@ body {
     .container {
         width: 90%; /* Container auf 90% der Breite des Viewports setzen */
         padding: 15px; /* Weniger Padding auf kleinen Bildschirmen */
-        margin-top: 10px; /* Weniger Abstand vom oberen Rand des Viewports */
+        top: 30%; /* Container weiter oben positionieren */
     }
 
     .anton-sc {
@@ -80,7 +83,7 @@ body {
     .container {
         width: 95%; /* Container auf 95% der Breite des Viewports setzen */
         padding: 10px; /* Noch weniger Padding auf sehr kleinen Bildschirmen */
-        margin-top: 5px; /* Noch weniger Abstand vom oberen Rand des Viewports */
+        top: 20%; /* Container weiter oben positionieren */
     }
 
     .anton-sc {
@@ -91,3 +94,4 @@ body {
         font-size: 1em; /* Weitere Verkleinerung der Schriftgröße für den Text */
     }
 }
+
