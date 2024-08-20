@@ -29,6 +29,7 @@ body {
     flex-direction: column; /* Text und Container in Spalten anordnen */
     align-items: center; /* Horizontale Zentrierung des Inhalts */
     justify-content: flex-start; /* Text am oberen Rand des Containers ausrichten */
+    margin-top: 20px; /* Abstand vom oberen Rand des Viewports */
 }
 
 /* Stile für die Überschrift */
@@ -46,25 +47,12 @@ body {
     color: #FFFFFF; /* Farbe für den Text: Weiß */
 }
 
-/* Hintergrundverlauf für besseren Textkontrast */
-.container::before {
-    content: ""; /* Leeres Element */
-    position: absolute; /* Absolute Positionierung */
-    top: -30%; /* Hintergrundverlauf beginnt weiter oben als der Container */
-    left: -20%; /* Hintergrundverlauf beginnt weiter links als der Container */
-    width: 140%; /* Breitere Fläche für den Hintergrundverlauf */
-    height: 140%; /* Höhere Fläche für den Hintergrundverlauf */
-    background: radial-gradient(circle, rgba(148, 119, 76, 0.8) 0%, rgba(148, 119, 76, 0) 60%); /* Verlauf von oben nach unten */
-    z-index: -1; /* Hintergrund hinter dem Text */
-    border-radius: 10px; /* Gleiche abgerundete Ecken wie der Container */
-}
-
 /* Für Bildschirme bis 768px Breite (Tablets und kleinere Laptops) */
 @media (max-width: 768px) {
     .container {
         width: 90%; /* Container auf 90% der Breite des Viewports setzen */
         padding: 15px; /* Weniger Padding auf kleinen Bildschirmen */
-        top: 25%; /* Container höher positionieren */
+        margin-top: 10px; /* Weniger Abstand vom oberen Rand des Viewports */
     }
 
     .anton-sc {
@@ -81,7 +69,7 @@ body {
     .container {
         width: 95%; /* Container auf 95% der Breite des Viewports setzen */
         padding: 10px; /* Noch weniger Padding auf sehr kleinen Bildschirmen */
-        top: 20%; /* Container höher positionieren */
+        margin-top: 5px; /* Noch weniger Abstand vom oberen Rand des Viewports */
     }
 
     .anton-sc {
@@ -92,4 +80,5 @@ body {
         font-size: 1em; /* Weitere Verkleinerung der Schriftgröße für den Text */
     }
 }
+
 
