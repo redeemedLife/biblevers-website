@@ -1,7 +1,7 @@
 /* Allgemeine Stile für die gesamte Seite */
 body {
     font-family: 'DM Sans', sans-serif; /* Standard-Schriftart für den Body-Text */
-    background-image: url('https://github.com/redeemedLife/biblevers-website/blob/main/_70248f89-e0c0-4e28-a6d0-c28bd936e807.jpeg?raw=true'); /* Pfad zum Hintergrundbild */
+    background-image: url('https://github.com/redeemedLife/biblevers-website/blob/main/IMG_1843.jpg?raw=true'); /* Pfad zum Hintergrundbild */
     background-size: cover; /* Hintergrundbild vollständig abdecken */
     background-position: center; /* Bild zentrieren */
     background-repeat: no-repeat; /* Bild nicht wiederholen */
