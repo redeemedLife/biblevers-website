@@ -11,4 +11,19 @@ function getRandomVerse() {
     return verses[randomIndex];
 }
 
-document.getElementById('verse').innerText = getRandomVerse();
+function showVerse() {
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('verse').style.display = 'block';
+    document.getElementById('verse').innerText = getRandomVerse();
+}
+
+// Ladeanimation 4 Sekunden anzeigen, dann Vers zeigen
+setTimeout(showVerse, 4000);
+
+// Blinkende Punkte
+let dotIndex = 0;
+const dots = ["", ".", "..", "..."];
+setInterval(() => {
+    document.getElementById('dots').innerText = dots[dotIndex];
+    dotIndex = (dotIndex + 1) % dots.length;
+}, 500);
