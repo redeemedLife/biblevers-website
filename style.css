@@ -61,6 +61,27 @@ body {
     color: #FFFFFF; /* Farbe für den Text: Weiß */
 }
 
+/* Stile für die Ladeanimation */
+#loading {
+    font-size: 1.5em;
+    color: #FFFFFF;
+}
+
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+#dots {
+    display: inline-block;
+}
+
+#dots::after {
+    content: '.';
+    animation: blink 1s steps(1, start) infinite;
+}
+
 /* Für Bildschirme bis 768px Breite (Tablets und kleinere Laptops) */
 @media (max-width: 768px) {
     .container {
