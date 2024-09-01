@@ -20,7 +20,7 @@ function showVerse() {
 // Ladeanimation 4 Sekunden anzeigen, dann Vers zeigen
 setTimeout(showVerse, 4000);
 
-// Blinkende Punkte für die Ladeanzeige
+// Blinkende Punkte
 let dotIndex = 0;
 const dots = ["", ".", "..", "..."];
 setInterval(() => {
