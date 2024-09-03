@@ -1,9 +1,14 @@
 const verses = [
-    "Psalm 23:1 - Der Herr ist mein Hirte; mir wird nichts mangeln.",
-    "Johannes 3:16 - Denn so sehr hat Gott die Welt geliebt, dass er seinen einzigen Sohn gab.",
-    "Philipper 4:13 - Ich vermag alles durch den, der mich mächtig macht, Christus.",
-    "1. Korinther 13:4 - Die Liebe ist langmütig, die Liebe ist gütig.",
-    "Jeremia 29:11 - Denn ich weiß, welche Gedanken ich über euch habe, spricht der Herr."
+    "Fürchte dich nicht, denn ich stehe dir bei; hab keine Angst, denn ich bin dein Gott! Ich mache dich stark, ich helfe dir, mit meiner siegreichen Hand beschütze ich dich! - Jesaja 41:10 ",
+    "Er beschützt jeden, der ihm vertraut, doch wer von ihm nichts wissen will, der wird in Finsternis enden. Denn aus eigener Kraft erringt keiner den Sieg. - 1.Samuel 2:9 ",
+    "Aber Gottes Barmherzigkeit ist groß. Wegen unserer Sünden waren wir in Gottes Augen tot. Doch er hat uns so sehr geliebt, dass er uns mit Christus neues Leben schenkte. Denkt immer daran: Diese Rettung verdankt ihr allein der Gnade Gottes. - Epheser 2:4-5 ",
+    "Er gibt mir neue Kraft. Er leitet mich auf sicheren Wegen und macht seinem Namen damit alle Ehre. - Psalm 23:3 ",
+    "Du bleibst nicht für immer zornig, denn Du liebst es, gnädig zu sein! - Micha 7:18 ",
+    "Der Herr ist mein Fels, meine Festung und mein Erretter, mein Gott, meine Zuflucht, mein sicherer Ort. Er ist mein Schild, mein starker Helfer, meine Burg auf unbezwingbarer Höhe. - Psalm 18:3 ",
+    "Darum lebe nicht mehr ich, sondern Christus lebt in mir! Mein vergängliches Leben auf dieser Erde lebe ich im Glauben an Jesus Christus, den Sohn Gottes, der mich geliebt und sein Leben für mich gegeben hat. - Gal 2:20 ",
+    
+    
+    
 ];
 
 function getRandomVerse() {
