@@ -78,68 +78,44 @@ body {
 }
 
 #dots::after {
-    content: '.';
+    content: '.'; 
     animation: blink 1s steps(1, start) infinite;
 }
 
-/* Herz-Button Style */
-.heart {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    background-image: url('https://image.shutterstock.com/image-vector/outline-heart-icon-vector-260nw-1296403785.jpg'); /* Leeres Herz-Symbol */
-    background-size: cover;
-    cursor: pointer;
-    transition: background-image 0.3s ease;
+/* Stile für das Herz-Icon */
+#heart {
+    width: 40px; /* Größe des Herz-Icons */
+    height: 40px; /* Größe des Herz-Icons */
+    background: url('heart-outline.svg') no-repeat center center; /* Pfad zum Herz-Icon */
+    background-size: contain; /* Herz-Icon anpassen */
+    cursor: pointer; /* Cursor ändern, wenn über das Herz gefahren wird */
+    transition: background 0.3s ease; /* Sanfter Übergang für die Farbe */
 }
 
-.heart.liked {
-    background-image: url('https://image.shutterstock.com/image-vector/red-heart-icon-vector-260nw-1296403785.jpg'); /* Rotes Herz-Symbol */
+#heart.liked {
+    background: url('heart-filled.svg') no-repeat center center; /* Pfad zum gefüllten Herz-Icon */
 }
 
 #like-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+    margin-top: 20px; /* Abstand nach oben */
 }
 
 #like-count {
-    font-size: 1.5em;
-    color: white;
-    margin-left: 10px;
+    font-size: 1.5em; /* Größe der Like-Anzahl */
+    color: #FFFFFF; /* Farbe der Like-Anzahl */
+    margin-left: 10px; /* Abstand zwischen Herz und Like-Anzahl */
 }
 
-/* Für Bildschirme bis 768px Breite (Tablets und kleinere Laptops) */
+/* Optional: Medienabfragen für mobile Geräte */
 @media (max-width: 768px) {
-    .container {
-        width: 90%; /* Container auf 90% der Breite des Viewports setzen */
-        padding: 15px; /* Weniger Padding auf kleinen Bildschirmen */
-        top: 30%; /* Container weiter oben positionieren */
+    #heart {
+        width: 30px; /* Kleinere Größe auf kleineren Bildschirmen */
+        height: 30px;
     }
 
-    .anton-sc {
-        font-size: 2em; /* Kleinere Schriftgröße für die Überschrift */
-    }
-
-    .dm-sans {
-        font-size: 1.2em; /* Kleinere Schriftgröße für den Text */
-    }
-}
-
-/* Für Bildschirme bis 480px Breite (Smartphones im Hochformat) */
-@media (max-width: 480px) {
-    .container {
-        width: 95%; /* Container auf 95% der Breite des Viewports setzen */
-        padding: 10px; /* Noch weniger Padding auf sehr kleinen Bildschirmen */
-        top: 20%; /* Container weiter oben positionieren */
-    }
-
-    .anton-sc {
-        font-size: 1.5em; /* Weitere Verkleinerung der Schriftgröße für die Überschrift */
-    }
-
-    .dm-sans {
-        font-size: 1em; /* Weitere Verkleinerung der Schriftgröße für den Text */
+    #like-count {
+        font-size: 1.2em; /* Kleinere Größe der Like-Anzahl auf kleineren Bildschirmen */
     }
 }
