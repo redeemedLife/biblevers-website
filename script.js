@@ -33,3 +33,7 @@ function toggleLike() {
 }
 
 // Ladeanimation 4 Sekunden anzeigen, dann Vers zeigen
+setTimeout(showVerse, 4000);
+
+// Event-Listener für den Like-Button
+document.getElementById('like-button').addEventListener('click', toggleLike);
