@@ -63,8 +63,8 @@ body {
 
 /* Stile für die Ladeanimation */
 #loading {
-    font-size: 1.5em;
-    color: #FFFFFF;
+    font-size: 1.5em; /* Schriftgröße für die Ladeanimation */
+    color: #FFFFFF; /* Farbe für die Ladeanimation */
 }
 
 @keyframes blink {
@@ -78,44 +78,65 @@ body {
 }
 
 #dots::after {
-    content: '.'; 
-    animation: blink 1s steps(1, start) infinite;
+    content: '.'; /* Punkt für die Ladeanimation */
+    animation: blink 1s steps(1, start) infinite; /* Blinkende Animation */
 }
 
-/* Stile für das Herz-Icon */
-#heart {
-    width: 40px; /* Größe des Herz-Icons */
-    height: 40px; /* Größe des Herz-Icons */
-    background: url('heart-outline.svg') no-repeat center center; /* Pfad zum Herz-Icon */
-    background-size: contain; /* Herz-Icon anpassen */
-    cursor: pointer; /* Cursor ändern, wenn über das Herz gefahren wird */
-    transition: background 0.3s ease; /* Sanfter Übergang für die Farbe */
+/* Für Bildschirme bis 768px Breite (Tablets und kleinere Laptops) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Container auf 90% der Breite des Viewports setzen */
+        padding: 15px; /* Weniger Padding auf kleinen Bildschirmen */
+        top: 30%; /* Container weiter oben positionieren */
+    }
+
+    .anton-sc {
+        font-size: 2em; /* Kleinere Schriftgröße für die Überschrift */
+    }
+
+    .dm-sans {
+        font-size: 1.2em; /* Kleinere Schriftgröße für den Text */
+    }
 }
 
-#heart.liked {
-    background: url('heart-filled.svg') no-repeat center center; /* Pfad zum gefüllten Herz-Icon */
+/* Für Bildschirme bis 480px Breite (Smartphones im Hochformat) */
+@media (max-width: 480px) {
+    .container {
+        width: 95%; /* Container auf 95% der Breite des Viewports setzen */
+        padding: 10px; /* Noch weniger Padding auf sehr kleinen Bildschirmen */
+        top: 20%; /* Container weiter oben positionieren */
+    }
+
+    .anton-sc {
+        font-size: 1.5em; /* Weitere Verkleinerung der Schriftgröße für die Überschrift */
+    }
+
+    .dm-sans {
+        font-size: 1em; /* Weitere Verkleinerung der Schriftgröße für den Text */
+    }
 }
 
+/* Stile für den Like-Button */
 #like-container {
-    display: flex;
-    align-items: center;
+    display: none; /* Anfangs versteckt */
+    align-items: center; /* Zentriert die Icons vertikal */
     margin-top: 20px; /* Abstand nach oben */
 }
 
-#like-count {
-    font-size: 1.5em; /* Größe der Like-Anzahl */
-    color: #FFFFFF; /* Farbe der Like-Anzahl */
-    margin-left: 10px; /* Abstand zwischen Herz und Like-Anzahl */
+#heart {
+    width: 50px; /* Breite des Herz-Icons */
+    height: 50px; /* Höhe des Herz-Icons */
+    cursor: pointer; /* Zeiger als Hand anzeigen, wenn über das Herz gefahren wird */
+    background: url('heart-outline.svg') no-repeat center; /* Herz-Icon für nicht geliked */
+    background-size: contain; /* Größe des Hintergrundbildes anpassen */
 }
 
-/* Optional: Medienabfragen für mobile Geräte */
-@media (max-width: 768px) {
-    #heart {
-        width: 30px; /* Kleinere Größe auf kleineren Bildschirmen */
-        height: 30px;
-    }
+#heart.liked {
+    background: url('heart-filled.svg') no-repeat center; /* Herz-Icon für geliked */
+}
 
-    #like-count {
-        font-size: 1.2em; /* Kleinere Größe der Like-Anzahl auf kleineren Bildschirmen */
-    }
+#like-count {
+    font-size: 1.5em; /* Schriftgröße für die Like-Anzahl */
+    margin-left: 10px; /* Abstand zwischen Herz und Like-Anzahl */
+    color: #FFFFFF; /* Farbe der Like-Anzahl */
 }
