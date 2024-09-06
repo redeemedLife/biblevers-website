@@ -1,4 +1,4 @@
-// Firebase initialisieren (Dieser Code wird von deiner SDK-Konfiguration übernommen)
+// Firebase initialisieren (mit deiner SDK-Konfiguration)
 const firebaseConfig = {
     apiKey: "AIzaSyBGHHNFPYgW5brQU2EvZz_RPGuc-NI3bJc",
     authDomain: "redeemed-life.firebaseapp.com",
@@ -11,7 +11,7 @@ const firebaseConfig = {
 };
 
 // Firebase initialisieren
-const app = firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
 
 // Verweis auf die Realtime Database
@@ -31,9 +31,6 @@ function like() {
         return (currentLikes || 0) + 1;
     });
 }
-
-// Ladeanimation 4 Sekunden anzeigen, dann Vers zeigen
-setTimeout(showVerse, 4000);
 
 // Event-Listener für den Like-Button
 document.getElementById('like-button').addEventListener('click', like);
@@ -58,9 +55,13 @@ function getRandomVerse() {
     return verses[randomIndex];
 }
 
+// Zeige den zufälligen Vers nach der Ladeanimation an
 function showVerse() {
     document.getElementById('loading').style.display = 'none';
     document.getElementById('verse').style.display = 'block';
     document.getElementById('like-container').style.display = 'flex'; // Zeige den Like-Button
     document.getElementById('verse').innerText = getRandomVerse();
 }
+
+// Ladeanimation 4 Sekunden anzeigen, dann Vers zeigen
+setTimeout(showVerse, 4000);
