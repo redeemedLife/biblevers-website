@@ -55,6 +55,19 @@ function getRandomVerse() {
     return verses[randomIndex];
 }
 
+// Ladeanimation für die Punkte
+function animateDots() {
+    let dots = '';
+    let count = 0;
+    const dotsElement = document.getElementById('dots');
+    
+    setInterval(() => {
+        count = (count + 1) % 4;
+        dots = '.'.repeat(count);
+        dotsElement.innerText = dots;
+    }, 500); // Alle 500ms werden die Punkte aktualisiert
+}
+
 // Zeige den zufälligen Vers nach der Ladeanimation an
 function showVerse() {
     document.getElementById('loading').style.display = 'none';
@@ -63,5 +76,6 @@ function showVerse() {
     document.getElementById('verse').innerText = getRandomVerse();
 }
 
-// Ladeanimation 4 Sekunden anzeigen, dann Vers zeigen
+// Ladeanimation starten und Vers nach 4 Sekunden anzeigen
 setTimeout(showVerse, 4000);
+animateDots(); // Animation der Punkte starten
