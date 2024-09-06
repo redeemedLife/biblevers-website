@@ -1,129 +1,140 @@
 /* Allgemeine Stile für die gesamte Seite */
 body {
-    font-family: 'DM Sans', sans-serif; /* Standard-Schriftart für den Body-Text */
-    background-image: url('https://github.com/redeemedLife/biblevers-website/blob/main/IMG_1843.jpg?raw=true'); /* Pfad zum Hintergrundbild */
-    background-size: cover; /* Hintergrundbild vollständig abdecken */
-    background-position: center; /* Bild zentrieren */
-    background-repeat: no-repeat; /* Bild nicht wiederholen */
-    background-attachment: fixed; /* Hintergrundbild fixieren, damit es beim Scrollen nicht verschoben wird */
-    color: #333; /* Textfarbe */
-    margin: 0; /* Kein Margin */
-    padding: 0; /* Kein Padding */
-    height: 100vh; /* Vollständige Höhe des Viewports */
-    display: flex; /* Flexbox für zentrierten Inhalt */
-    align-items: center; /* Vertikale Zentrierung des Inhalts */
-    justify-content: center; /* Horizontale Zentrierung des Inhalts */
+    font-family: 'DM Sans', sans-serif;
+    background-image: url('https://github.com/redeemedLife/biblevers-website/blob/main/IMG_1843.jpg?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Container für zentrierten Inhalt */
 .container {
-    max-width: 90%; /* Maximale Breite des Containers */
-    background: transparent; /* Hintergrund auf transparent setzen */
-    padding: 20px; /* Innenabstand */
-    border-radius: 0; /* Keine abgerundeten Ecken */
-    text-align: center; /* Zentriert den Text */
-    position: absolute; /* Absolute Positionierung für exakte Platzierung */
-    top: 40%; /* Positioniere den Container 40% vom oberen Rand des Viewports */
-    left: 50%; /* Zentriere den Container horizontal */
-    transform: translateX(-50%); /* Korrigiere die horizontale Zentrierung */
-    z-index: 1; /* Sicherstellen, dass der Container über dem Hintergrund liegt */
-    box-shadow: none; /* Keine Schatten */
-    display: flex; /* Flexbox für die Textausrichtung */
-    flex-direction: column; /* Text und Container in Spalten anordnen */
-    align-items: center; /* Horizontale Zentrierung des Inhalts */
-    justify-content: flex-start; /* Text am oberen Rand des Containers ausrichten */
+    max-width: 90%;
+    background: transparent;
+    padding: 20px;
+    border-radius: 0;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 /* Dunklerer Grauverlauf hinter der Überschrift und dem Text */
 .container::before {
-    content: ""; /* Leeres Element */
-    position: absolute; /* Absolute Positionierung */
-    top: 0; /* Streifen am oberen Rand des Containers beginnen */
-    left: 0; /* Streifen am linken Rand des Containers beginnen */
-    width: 100%; /* Volle Breite des Containers */
-    height: 100%; /* Volle Höhe des Containers */
-    background: radial-gradient(circle, rgba(128, 128, 128, 0.9) 0%, rgba(105, 105, 105, 0.7) 50%, rgba(169, 169, 169, 0.4) 70%, rgba(211, 211, 211, 0) 100%); /* Grauer Verlauf */
-    z-index: -1; /* Hintergrund hinter dem Text */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(128, 128, 128, 0.9) 0%, rgba(105, 105, 105, 0.7) 50%, rgba(169, 169, 169, 0.4) 70%, rgba(211, 211, 211, 0) 100%);
+    z-index: -1;
 }
 
 /* Stile für die Überschrift */
 .anton-sc {
-    font-family: 'Anton SC', sans-serif; /* Schriftart für die Überschrift */
-    font-size: 2.5em; /* Größe der Überschrift */
-    color: #F5F5DC; /* Farbe für die Überschrift: Cream */
-    margin-bottom: 20px; /* Abstand nach unten */
+    font-family: 'Anton SC', sans-serif;
+    font-size: 2.5em;
+    color: #F5F5DC;
+    margin-bottom: 20px;
 }
 
 /* Stile für den Text unter der Überschrift */
 .dm-sans {
-    font-family: 'DM Sans', sans-serif; /* Schriftart für den Text */
-    font-size: 1.5em; /* Schriftgröße für den Text */
-    color: #FFFFFF; /* Farbe für den Text: Weiß */
-}
-
-/* Stile für die Ladeanimation */
-#loading {
+    font-family: 'DM Sans', sans-serif;
     font-size: 1.5em;
     color: #FFFFFF;
 }
 
-@keyframes blink {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
+/* Ladeanimation */
+#loading {
+    font-size: 1.5em;
+    color: #FFFFFF;
 }
 
 #dots {
     display: inline-block;
 }
 
-#dots::after {
-    content: '.';
-    animation: blink 1s steps(1, start) infinite;
+/* Like-Button Stil */
+#like-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-/* Stile für das Herz-Icon */
-.heart {
-    font-size: 2em;
+#like-button {
+    width: 40px;
+    height: 40px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/4/4c/Heart_corazon.svg') no-repeat center center;
+    background-size: contain;
+    border: none;
     cursor: pointer;
-    color: gray;
-    transition: color 0.3s ease;
+    transition: transform 0.3s ease;
+    outline: none;
 }
 
-.heart.liked {
-    color: red;
+#like-button:hover {
+    transform: scale(1.2); /* Herz wird größer beim Hovern */
+}
+
+#like-button.liked {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/f/f3/Heart_red_human.svg') no-repeat center center;
+    background-size: contain;
+}
+
+#like-count {
+    font-size: 1.5em;
+    color: white;
+    margin-left: 10px;
 }
 
 /* Für Bildschirme bis 768px Breite (Tablets und kleinere Laptops) */
 @media (max-width: 768px) {
     .container {
-        width: 90%; /* Container auf 90% der Breite des Viewports setzen */
-        padding: 15px; /* Weniger Padding auf kleinen Bildschirmen */
-        top: 30%; /* Container weiter oben positionieren */
+        width: 90%;
+        padding: 15px;
+        top: 30%;
     }
 
     .anton-sc {
-        font-size: 2em; /* Kleinere Schriftgröße für die Überschrift */
+        font-size: 2em;
     }
 
     .dm-sans {
-        font-size: 1.2em; /* Kleinere Schriftgröße für den Text */
+        font-size: 1.2em;
     }
 }
 
 /* Für Bildschirme bis 480px Breite (Smartphones im Hochformat) */
 @media (max-width: 480px) {
     .container {
-        width: 95%; /* Container auf 95% der Breite des Viewports setzen */
-        padding: 10px; /* Noch weniger Padding auf sehr kleinen Bildschirmen */
-        top: 20%; /* Container weiter oben positionieren */
+        width: 95%;
+        padding: 10px;
+        top: 20%;
     }
 
     .anton-sc {
-        font-size: 1.5em; /* Weitere Verkleinerung der Schriftgröße für die Überschrift */
+        font-size: 1.5em;
     }
 
     .dm-sans {
-        font-size: 1em; /* Weitere Verkleinerung der Schriftgröße für den Text */
+        font-size: 1em;
     }
 }
