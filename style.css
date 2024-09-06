@@ -82,6 +82,18 @@ body {
     animation: blink 1s steps(1, start) infinite;
 }
 
+/* Stile für das Herz-Icon */
+.heart {
+    font-size: 2em;
+    cursor: pointer;
+    color: gray;
+    transition: color 0.3s ease;
+}
+
+.heart.liked {
+    color: red;
+}
+
 /* Für Bildschirme bis 768px Breite (Tablets und kleinere Laptops) */
 @media (max-width: 768px) {
     .container {
