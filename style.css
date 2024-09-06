@@ -25,6 +25,22 @@ body {
     top: 40%;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Dunklerer Grauverlauf hinter der Überschrift und dem Text */
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(128, 128, 128, 0.9) 0%, rgba(105, 105, 105, 0.7) 50%, rgba(169, 169, 169, 0.4) 70%, rgba(211, 211, 211, 0) 100%);
+    z-index: -1;
 }
 
 /* Stile für die Überschrift */
