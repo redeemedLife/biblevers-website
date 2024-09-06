@@ -16,32 +16,20 @@ function getRandomVerse() {
 function showVerse() {
     document.getElementById('loading').style.display = 'none';
     document.getElementById('verse').style.display = 'block';
-    document.getElementById('verse').innerText = getRandomVerse();
     document.getElementById('like-container').style.display = 'flex'; // Zeige den Like-Button
+    document.getElementById('verse').innerText = getRandomVerse();
+}
+
+function toggleLike() {
+    const likeButton = document.getElementById('like-button');
+    const likeCount = document.getElementById('like-count');
+    if (likeButton.classList.contains('liked')) {
+        likeButton.classList.remove('liked');
+        likeCount.innerText = parseInt(likeCount.innerText) - 1;
+    } else {
+        likeButton.classList.add('liked');
+        likeCount.innerText = parseInt(likeCount.innerText) + 1;
+    }
 }
 
 // Ladeanimation 4 Sekunden anzeigen, dann Vers zeigen
-setTimeout(showVerse, 4000);
-
-// Blinkende Punkte
-let dotIndex = 0;
-const dots = ["", ".", "..", "..."];
-setInterval(() => {
-    document.getElementById('dots').innerText = dots[dotIndex];
-    dotIndex = (dotIndex + 1) % dots.length;
-}, 500);
-
-// Like-Button Funktionalität
-let likeCount = 0;
-
-document.getElementById('heart').addEventListener('click', () => {
-    const heart = document.getElementById('heart');
-    if (heart.classList.contains('liked')) {
-        heart.classList.remove('liked'); // Herz wieder auf leer setzen
-        likeCount--; // Like-Zähler verringern
-    } else {
-        heart.classList.add('liked'); // Herz auf rot setzen
-        likeCount++; // Like-Zähler erhöhen
-    }
-    document.getElementById('like-count').innerText = likeCount;
-});
