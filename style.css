@@ -20,30 +20,11 @@ body {
     max-width: 90%;
     background: transparent;
     padding: 20px;
-    border-radius: 0;
     text-align: center;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1;
-    box-shadow: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-/* Dunklerer Grauverlauf hinter der Überschrift und dem Text */
-.container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle, rgba(128, 128, 128, 0.9) 0%, rgba(105, 105, 105, 0.7) 50%, rgba(169, 169, 169, 0.4) 70%, rgba(211, 211, 211, 0) 100%);
-    z-index: -1;
 }
 
 /* Stile für die Überschrift */
@@ -54,60 +35,36 @@ body {
     margin-bottom: 20px;
 }
 
-/* Stile für den Text unter der Überschrift */
+/* Stile für den Text */
 .dm-sans {
     font-family: 'DM Sans', sans-serif;
     font-size: 1.5em;
     color: #FFFFFF;
 }
 
-/* Stile für die Ladeanimation */
-#loading {
-    font-size: 1.5em;
-    color: #FFFFFF;
-}
-
-@keyframes blink {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
-}
-
-#dots {
-    display: inline-block;
-}
-
-#dots::after {
-    content: '.';
-    animation: blink 1s steps(1, start) infinite;
-}
-
-/* Stile für den Like-Button */
-.like-container {
-    margin-top: 20px;
+/* Like-Button Stile */
+#like-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .like-button {
-    width: 50px;
-    height: 50px;
-    background: url('https://image.shutterstock.com/image-vector/heart-icon-vector-260nw-1720805424.jpg') no-repeat center center;
-    background-size: contain;
-    border: 2px solid #000;
-    border-radius: 50%;
+    font-size: 2em;
+    color: black;
     cursor: pointer;
+    transition: color 0.3s;
 }
 
 .like-button.liked {
-    background-color: red;
+    color: red; /* Herz wird rot, wenn es geliked wird */
 }
 
-.like-count {
+#like-count {
     font-size: 1.5em;
-    color: #FFFFFF;
     margin-left: 10px;
+    color: white;
 }
 
 /* Für Bildschirme bis 768px Breite (Tablets und kleinere Laptops) */
