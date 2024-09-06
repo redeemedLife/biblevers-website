@@ -51,14 +51,12 @@ const verses = [
 
 // Zufälligen Vers holen
 function getRandomVerse() {
-    console.log("Zufälliger Vers wird geholt");
     const randomIndex = Math.floor(Math.random() * verses.length);
     return verses[randomIndex];
 }
 
 // Ladeanimation für die Punkte
 function animateDots() {
-    console.log("Punkte Animation gestartet");
     let dots = '';
     let count = 0;
     const dotsElement = document.getElementById('dots');
@@ -72,7 +70,6 @@ function animateDots() {
 
 // Zeige den zufälligen Vers nach der Ladeanimation an
 function showVerse() {
-    console.log("Vers wird angezeigt");
     document.getElementById('loading').style.display = 'none';
     document.getElementById('verse').style.display = 'block';
     document.getElementById('like-container').style.display = 'flex'; // Zeige den Like-Button
@@ -80,6 +77,5 @@ function showVerse() {
 }
 
 // Ladeanimation starten und Vers nach 4 Sekunden anzeigen
-console.log("Ladeanimation gestartet");
 setTimeout(showVerse, 4000);
 animateDots(); // Animation der Punkte starten
