@@ -10,4 +10,18 @@ const verses = [
 
 function getRandomVerse() {
     const randomIndex = Math.floor(Math.random() * verses.length);
-    return verses
+    return verses[randomIndex];
+}
+
+window.onload = function() {
+    const loadingElement = document.getElementById("loading");
+    const verseElement = document.getElementById("verse");
+
+    // Simuliere das Laden für 3 Sekunden (3000 Millisekunden)
+    setTimeout(() => {
+        const randomVerse = getRandomVerse();
+        loadingElement.style.display = "none"; // Verstecke das "A word from God..."-Element
+        verseElement.textContent = randomVerse;
+        verseElement.style.display = "block"; // Zeige den Vers an
+    }, 3000); // 3000 Millisekunden = 3 Sekunden
+};
