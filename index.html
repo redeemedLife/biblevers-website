@@ -11,6 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <!-- Verlinke zur CSS-Datei -->
     <link rel="stylesheet" href="style.css">
+    <!-- Google Analytics Tracking-Code -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5JJWRLL7P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Z5JJWRLL7P');
+    </script>
 </head>
 <body>
     <div class="container">
@@ -19,18 +28,7 @@
         <p id="loading" class="dm-sans">A word from God<span id="dots">...</span></p>
         <!-- Vers-Text -->
         <p id="verse" class="dm-sans" style="display: none;">Hier erscheint der Vers des Tages.</p>
-
-        <!-- Like-Button -->
-        <div id="like-container" style="display: none;">
-            <span id="like-button" class="like-button">&#9825;</span> <!-- Herz-Symbol -->
-            <span id="like-count">0</span>
-        </div>
     </div>
-
-    <!-- Firebase SDK einfügen -->
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
-
     <!-- Verlinke zur JavaScript-Datei -->
     <script src="script.js"></script>
 </body>
