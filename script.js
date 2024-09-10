@@ -6,7 +6,10 @@ const verses = [
     "Du bleibst nicht für immer zornig. - Micha 7:18",
     "Der Herr ist mein Fels. - Psalm 18:3",
     "Darum lebe nicht mehr ich, sondern Christus lebt in mir! - Galater 2:20",
-    "Vertraue von ganzem Herzen auf den HERRN und verlass dich nicht auf deinen Verstand, sondern denke an ihn auf allen deinen Wegen, so wird er dich recht führen. - Sprüche 3:5-6"
+    "Vertraue von ganzem Herzen auf den HERRN und verlass dich nicht auf deinen Verstand, sondern denke an ihn auf allen deinen Wegen, so wird er dich recht führen. - Sprüche 3:5-6",
+    "Darum sorgt euch nicht für den morgigen Tag, denn der morgige Tag wird für sich selbst sorgen. Es ist genug, dass jeder Tag seine eigene Plage hat. - Matthäus 6:34",
+    "Was wollen wir nun hierzu sagen? Ist Gott für uns, wer kann gegen uns sein? - Römer 8:31"
+
 ];
 
 function getRandomVerse() {
