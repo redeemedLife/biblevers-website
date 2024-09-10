@@ -5,7 +5,8 @@ const verses = [
     "Er gibt mir neue Kraft. - Psalm 23:3",
     "Du bleibst nicht für immer zornig. - Micha 7:18",
     "Der Herr ist mein Fels. - Psalm 18:3",
-    "Darum lebe nicht mehr ich, sondern Christus lebt in mir! - Galater 2:20"
+    "Darum lebe nicht mehr ich, sondern Christus lebt in mir! - Galater 2:20",
+    "Vertraue von ganzem Herzen auf den HERRN und verlass dich nicht auf deinen Verstand, sondern denke an ihn auf allen deinen Wegen, so wird er dich recht führen. - Sprüche 3:5-6"
 ];
 
 function getRandomVerse() {
