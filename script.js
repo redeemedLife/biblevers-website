@@ -41,8 +41,8 @@ const verses = [
     "Bleibt standhaft, dann gewinnt ihr das ewige Leben.« - Lukas‬ ‭21‬:‭19‬",
     "„Befiehl dem Herrn deinen Weg, und vertraue auf ihn, so wird er es vollbringen. - Psalmen‬ ‭37‬:‭5‬",
     "»Der Gerechte aber wird aus Glaubenleben«; doch: »Wenn er feige zurückweicht, so wird meine Seele keinWohlgefallen an ihm haben«. Wir aber gehören nicht zu denen, die feige zurückweichen zum Verderben, sondern zu denen, die glauben zur Errettung der Seele. - Hebräerbrief‬ ‭10‬:‭38‬-‭39‬",
-    "Bevor du reagierst, nimmm dir einen Moment, um dich zu beruhigen. Handle nicht impulsiv aus deinen Emotionen heraus."
-    
+    "Bevor du reagierst, nimmm dir einen Moment, um dich zu beruhigen. Handle nicht impulsiv aus deinen Emotionen heraus.                               >Geduld zu haben ist besser, als ein Held zu sein; und sich selbst beherrschen ist besser, als Städte zu erobern!< - Sprüche 16:32"
+
 
 ];
 
