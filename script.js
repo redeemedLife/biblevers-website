@@ -40,7 +40,8 @@ const verses = [
     "Haltet an der Botschaft fest, die ihr von mir gehört und angenommen habt. Richtet euch nach dem, was ich euch gelehrt habe, und lebt nach meinem Vorbild. Dann wird Gott, von dem aller Friede kommt, bei euch sein. - Philipper‬ ‭4‬:‭9‬",
     "Bleibt standhaft, dann gewinnt ihr das ewige Leben.« - Lukas‬ ‭21‬:‭19‬",
     "„Befiehl dem Herrn deinen Weg, und vertraue auf ihn, so wird er es vollbringen. - Psalmen‬ ‭37‬:‭5‬",
-    "»Der Gerechte aber wird aus Glaubenleben«; doch: »Wenn er feige zurückweicht, so wird meine Seele keinWohlgefallen an ihm haben«. Wir aber gehören nicht zu denen, die feige zurückweichen zum Verderben, sondern zu denen, die glauben zur Errettung der Seele. - Hebräerbrief‬ ‭10‬:‭38‬-‭39‬"
+    "»Der Gerechte aber wird aus Glaubenleben«; doch: »Wenn er feige zurückweicht, so wird meine Seele keinWohlgefallen an ihm haben«. Wir aber gehören nicht zu denen, die feige zurückweichen zum Verderben, sondern zu denen, die glauben zur Errettung der Seele. - Hebräerbrief‬ ‭10‬:‭38‬-‭39‬",
+    "Bevor du reagierst, nimmm dir einen Moment, um dich zu beruhigen. Handle nicht impulsiv aus deinen Emotionen heraus."
     
 
 ];
