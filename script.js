@@ -43,7 +43,14 @@ const verses = [
     "Bevor du reagierst, nimmm dir einen Moment, um dich zu beruhigen. Handle nicht impulsiv aus deinen Emotionen heraus.\n\n>Geduld zu haben ist besser, als ein Held zu sein; und sich selbst beherrschen ist besser, als Städte zu erobern!< - Sprüche 16:32",
     "Vergib, auch wenn es schwer fällt. Vergebung befreit dich von Hass und gibt dir inneren Frieden.\n\n>Euer Vater im Himmel wird euch vergeben, wenn ihr den Menschen vergebt, die euch Unrecht getan haben. Wenn ihr ihnen aber nicht vergebt, dann wird Gott auch eure Schuld nicht vergeben.< - Matthäus 6:14-15",
     "Setze gesunde Grenzen, um dein Herz zu schützen. Es ist in Ordnung, dich zu distanzieren, wenn du dich nicht respektiert fühlst.\n\n>Was ich dir jetzt rate, ist wichtiger als alles andre: Achte auf deine Gedanken, denn sie entscheiden über dein Leben!< - Sprüche 4:23",
-    "Vertraue darauf,dass Gott dich durch schwierige Zeiten führt. Bete um Weisheit und lass dich von Ihm leiten.\n\n>Verlass dich nicht auf deinen eigenen Verstand, sondern vertraue voll und ganz dem Herrn! Denke bei jedem Schritt an ihn; er zeigt dir den richtigen Weg und krönt dein Handeln mit Erfolg.< - Sprüche 3:5-6"
+    "Vertraue darauf,dass Gott dich durch schwierige Zeiten führt. Bete um Weisheit und lass dich von Ihm leiten.\n\n>Verlass dich nicht auf deinen eigenen Verstand, sondern vertraue voll und ganz dem Herrn! Denke bei jedem Schritt an ihn; er zeigt dir den richtigen Weg und krönt dein Handeln mit Erfolg.< - Sprüche 3:5-6",
+    "Gott hat einen Plan für dein Leben. Auch wenn du den Weg nicht immer verstehst, vertraue darauf, dass Er dich leitet.\n\nDenn ich weiß, was für Gedanken ich über euch habe, spricht der Herr: Gedanken des Friedens und nicht des Unheils, um euch eine Zukunft und Hoffnung zu geben. - Jeremia 29:11",
+    "In Zeiten der Not und des Zweifels, erinnere dich daran, dass Gott an deiner Seite ist.\n\nMeine Gnade genügt dir, denn meine Kraft kommt in der Schwachheit zur Vollendung. - 2. Korinther 12:9",
+    "Auch wenn du nicht verstehst, warum bestimmte Dinge geschehen, vertraue darauf, dass Gott alles zum Guten wenden kann.\n\nWir wissen aber, dass denen, die Gott lieben, alle Dinge zum Besten dienen. - Römer 8:28",
+    "Wenn du vor Entscheidungen stehst, bitte Gott um Weisheit. Er wird dir den richtigen Weg zeigen.\n\nWenn es jemandem von euch an Weisheit mangelt zu entscheiden, was in einer bestimmten Angelegenheit zu tun ist, soll er Gott darum bitten, und Gott wird sie ihm geben. Ihr wisst doch, dass er niemandem sein Unvermögen vorwirft und dass er jeden reich beschenkt. - Jakobus 1:5",
+    "Glaube daran, dass Gott dich liebt und für dich sorgt. Selbst in den dunkelsten Momenten wird Sein Licht den Weg erhellen.\n\nDer Herr ist mein Hirte, mir wird nichts mangeln. - Psalm 23:1-2",
+    "Wenn du dich schwach fühlst, erinnere dich daran, dass Gott deine Stärke ist. In Ihm findest du die Kraft, weiterzumachen.\n\nAlle, die ihre Hoffnung auf den Herrn setzen, bekommen neue Kraft. Sie sind wie Adler, denen mächtige Schwingen wachsen. Sie gehen und werden nicht müde, sie laufen und sind nicht erschöpft. - Jesaja 40:31",
+    
 
 
 ];
