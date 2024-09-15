@@ -40,7 +40,10 @@ const verses = [
     "Bleibt standhaft, dann gewinnt ihr das ewige Leben.« - Lukas 21:19",
     "„Befiehl dem Herrn deinen Weg, und vertraue auf ihn, so wird er es vollbringen. - Psalmen 37:5",
     "»Der Gerechte aber wird aus Glaubenleben«; doch: »Wenn er feige zurückweicht, so wird meine Seele keinWohlgefallen an ihm haben«. Wir aber gehören nicht zu denen, die feige zurückweichen zum Verderben, sondern zu denen, die glauben zur Errettung der Seele. - Hebräerbrief 10:38-39",
-    "Bevor du reagierst, nimmm dir einen Moment, um dich zu beruhigen. Handle nicht impulsiv aus deinen Emotionen heraus.\n\n>Geduld zu haben ist besser, als ein Held zu sein; und sich selbst beherrschen ist besser, als Städte zu erobern!< - Sprüche 16:32"
+    "Bevor du reagierst, nimmm dir einen Moment, um dich zu beruhigen. Handle nicht impulsiv aus deinen Emotionen heraus.\n\n>Geduld zu haben ist besser, als ein Held zu sein; und sich selbst beherrschen ist besser, als Städte zu erobern!< - Sprüche 16:32",
+    "Vergib, auch wenn es schwer fällt. Vergebung befreit dich von Hass und gibt dir inneren Frieden.\n\n>Euer Vater im Himmel wird euch vergeben, wenn ihr den Menschen vergebt, die euch Unrecht getan haben. Wenn ihr ihnen aber nicht vergebt, dann wird Gott auch eure Schuld nicht vergeben.< - Matthäus 6:14-15",
+    "Setze gesunde Grenzen, um dein Herz zu schützen. Es ist in Ordnung, dich zu distanzieren, wenn du dich nicht respektiert fühlst.\n\n>Was ich dir jetzt rate, ist wichtiger als alles andre: Achte auf deine Gedanken, denn sie entscheiden über dein Leben!< - Sprüche 4:23",
+    "Vertraue darauf,dass Gott dich durch schwierige Zeiten führt. Bete um Weisheit und lass dich von Ihm leiten.\n\n>Verlass dich nicht auf deinen eigenen Verstand, sondern vertraue voll und ganz dem Herrn! Denke bei jedem Schritt an ihn; er zeigt dir den richtigen Weg und krönt dein Handeln mit Erfolg.< - Sprüche 3:5-6"
 
 
 ];
