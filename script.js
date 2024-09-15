@@ -1,6 +1,6 @@
 const verses = [
-    
-    "Fürchte dich nicht, denn ich stehe dir bei; hab keine Angst, denn ich bin dein Gott! - Jesaja 41:10",
+   
+   "Fürchte dich nicht, denn ich stehe dir bei; hab keine Angst, denn ich bin dein Gott! - Jesaja 41:10",
     "Er beschützt jeden, der ihm vertraut. - 1. Samuel 2:9",
     "Aber Gottes Barmherzigkeit ist groß. - Epheser 2:4-5",
     "Er gibt mir neue Kraft. - Psalm 23:3",
@@ -63,7 +63,6 @@ const verses = [
     "Gott will dir Freude schenken, selbst inmitten von Prüfungen. Freude, die nicht von äußeren Umständen abhängt, sondern von Seiner Gegenwart in deinem Leben.\n\nDie Freude am Herrn ist eure Stärke. - Nehemia 8:10",
     "Gott sieht dein Herz und weiß, was du durchmachst. Er kennt deine Gedanken, bevor du sie aussprichst, und sorgt für dich in jeder Situation.\n\nSchon bevor ich anfange zu reden,weißt du, was ich sagen will. - Psalm 139:4"
     "Wenn du dich von Sorgen überwältigt fühlst, lege sie in Gottes Hände. Er kümmert sich um dich und sorgt dafür, dass du Frieden findest, wenn du Ihm vertraust.\n\nLadet alle eure Sorgen bei Gott ab, denn er sorgt für euch. - 1. Petrus 5:7"
-
 
 ];
 
