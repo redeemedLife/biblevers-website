@@ -1,4 +1,5 @@
 const verses = [
+    
     "Fürchte dich nicht, denn ich stehe dir bei; hab keine Angst, denn ich bin dein Gott! - Jesaja 41:10",
     "Er beschützt jeden, der ihm vertraut. - 1. Samuel 2:9",
     "Aber Gottes Barmherzigkeit ist groß. - Epheser 2:4-5",
