@@ -61,7 +61,7 @@ const verses = [
     "Furcht hat keinen Platz in deinem Leben, wenn du im Vertrauen auf Gott lebst. Er ist dein Beschützer und hält deine rechte Hand.\n\n'Ich sehe immer auf den Herrn . Er steht mir zur Seite, damit ich nicht falle. - Psalm 16:8",
     "Gott hat dir einen Geist der Stärke gegeben, und durch Ihn kannst du jede Herausforderung meistern. Die wahre Stärke kommt aus deiner Beziehung zu Ihm.\n\nAlles kann ich durch Christus, der mir Kraft und Stärke gibt. - Philipper 4:13",
     "Gott will dir Freude schenken, selbst inmitten von Prüfungen. Freude, die nicht von äußeren Umständen abhängt, sondern von Seiner Gegenwart in deinem Leben.\n\nDie Freude am Herrn ist eure Stärke. - Nehemia 8:10",
-    "Gott sieht dein Herz und weiß, was du durchmachst. Er kennt deine Gedanken, bevor du sie aussprichst, und sorgt für dich in jeder Situation.\n\nSchon bevor ich anfange zu reden,weißt du, was ich sagen will. - Psalm 139:4"
+    "Gott sieht dein Herz und weiß, was du durchmachst. Er kennt deine Gedanken, bevor du sie aussprichst, und sorgt für dich in jeder Situation.\n\nSchon bevor ich anfange zu reden,weißt du, was ich sagen will. - Psalm 139:4",
     "Wenn du dich von Sorgen überwältigt fühlst, lege sie in Gottes Hände. Er kümmert sich um dich und sorgt dafür, dass du Frieden findest, wenn du Ihm vertraust.\n\nLadet alle eure Sorgen bei Gott ab, denn er sorgt für euch. - 1. Petrus 5:7"
 
 ];
